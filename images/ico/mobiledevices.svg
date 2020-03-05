@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M22.8,46.5H9.8c-0.6,0-1-0.4-1-1V18.5c0-0.6,0.4-1,1-1h13.1"/>
+		<g>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.2" y1="23" x2="20" y2="23"/>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.2" y1="26.2" x2="20" y2="26.2"/>
+		</g>
+		
+			<circle fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="16.6" cy="41" r="1.6"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M41.2,46.5h13.1c0.6,0,1-0.4,1-1V18.5c0-0.6-0.4-1-1-1H41.2"/>
+		<g>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="50.8" y1="23" x2="44" y2="23"/>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="50.8" y1="26.2" x2="44" y2="26.2"/>
+		</g>
+		
+			<circle fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="47.4" cy="41" r="1.6"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M40,49.7H24c-0.6,0-1-0.4-1-1V15.3c0-0.6,0.4-1,1-1h16c0.6,0,1,0.4,1,1v33.4C41,49.3,40.6,49.7,40,49.7z"/>
+		<g>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.6" y1="21.2" x2="36.1" y2="21.2"/>
+			
+				<line fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.6" y1="25.2" x2="36.1" y2="25.2"/>
+		</g>
+		
+			<circle fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="31.9" cy="42.8" r="2"/>
+	</g>
+</g>
+</svg>
