@@ -9,54 +9,104 @@
   <!--Reset.css-->
   <link rel="stylesheet" href="css/reset.css">
 
-  <!-- Font is awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- FONTS -->
+  <link href="LemonMilk.woff" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
 
   <!--Custom Styles-->
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
-  <nav>
-    <img src="images/logo/mn_logo.svg" alt="" width=65 height=68>
-    <h3>Michelle Nicole Design</h3>
-    <a href="about.html">about</a>
-    <a href="project.html">portfolio</a>
 
-    <!--button to contact-->
-    <button onclick="window.location.href = 'https://contact.html';">contact</button>
+  <nav class="nav-header">
+    <div class="header">
+      <a href="index.html"><img src="images/logo/mn_logo.svg" alt="" width=65 height=68></a>
+      <a href="index.html"><h1>Michelle Nicole Design</h1></a>
+    </div>
+    <ul class="nav-items">
+      <li><a class="link" style="float:right" href="about.html">About</a></li>
+      <li><a class="link" style="float:right" href="project.html">Portfolio</a></li>
+      <!--button to contact-->
+      <li><a class="contact button" href="contact.html">contact</a></li>
+    </ul>
   </nav>
 
-  <h3>Let’s get in touch</h3>
-  <p>Feel free to fill out the form below or reach out to me at michellenicoledesign@gmail.com. I look forward to hearing from you!</p>
+  <section class="newsection sectioncentered">
+    <div class="containercontact">
 
-  <!--Insert Form-->
+      <h3>Let’s get in touch!</h3>
+      <p>Feel free to fill out the form below or reach out to me directly at michellenicoledesign@gmail.com. <br>I look forward to hearing from you!</p>
 
-  <a class="button" href="contact.html">
-    Contact Me
-  </a>
+      <!--Insert Form-->
+      <div class="containerform">
+        <form action="action_page.php">
+
+          <label for="fname"></label>
+          <input type="text" id="fname" name="firstname" placeholder="Name">
+
+          <label for="lname">
+            <input type="text" id="lname" name="lastname" placeholder="Email"></label>
+
+          <label for="subject">
+          <input type="text" id="subject" name="subject" placeholder="Subject"></label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+
+          <input type="submit" value="CONTACT ME">
+
+        </form>
+      </div>
+
+
+      <div class="newsection"></div>
+
+      <hr>
+      <div class="newsection"></div>
+      <h6>michellenicoledesign@gmail.com</h6>
+
+      <p>Los Angeles, CA</p>
+
+    </div>
+
+  </section>
 
 </body>
 
-<footer>
-  <img src="images/logo/mn_logo.svg" width=65 alt="mn logo">
-  <a href="about.html">
-    <h6>about</h6>
-  </a>
-  <a href="portfolio.html">
-    <h6>portfolio</h6>
-  </a>
-  <a href="contact.html">
-    <h6>contact</h6>
-  </a>
-  <a href="https://linkedin.com/in/michellenng">
-    <img src="images/ico/Linkedin.svg" alt="Linkedin">
-  </a>
-  <a href="https://twitåter.com/michellenng">
-    <img src="images/ico/twitter.svg" alt="Twitter">
-  </a>
-  <a href="https://instagram.com/michellenicoledesign">
-    <img src="images/ico/ig.svg" alt="Instagram">
-  </a>
-  <h6>© Michelle Nicole Ng 2020</h6>
+  <footer class="footerwrapper">
+    <div class="footercontainer">
+      <div class="footerlogo">
+        <a href="index.html"><img src="images/logo/mn_logo.svg" width=65 alt="mn logo"></a>
+      </div>
+
+      <div class="footerlinks">
+        <a href="about.html">
+          <h6>about</h6>
+        </a>
+        <a href="portfolio.html">
+          <h6>portfolio</h6>
+        </a>
+        <a href="contact.html">
+          <h6>contact</h6>
+        </a>
+      </div>
+
+      <div class="sociallinksnone">
+        <a href="https://linkedin.com/in/michellenng">
+          <img src="images/ico/Linkedin.svg" alt="Linkedin">
+        </a>
+        <a href="https://twitter.com/michellenng">
+          <img src="images/ico/twitter.svg" alt="Twitter">
+        </a>
+        <a href="https://instagram.com/michellenicoledesign">
+          <img src="images/ico/ig.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="copywright">
+      <h6>© Michelle Nicole Ng 2020</h6>
+    </div>
 </footer>

@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #141414;
+  font-size: 10px;
+  font-family: 'IBM Plex Sans', "Lemon/Milk", 'Open Sans', sans-serif;
+  line-height: 10px;
+}
+
+
+@font-face {
+  font-family: 'Lemon/Milk Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Regular'), url('LemonMilk.woff') format('woff');
+}
+
+
+body {
+  background-color: white;
+}
+
+
+/* TYPOGRAPHY STYLING*/
+h1 {
+  font-family: "Lemon/Milk";
+  font-size: 3.6rem;
+  font-weight: light;
+  letter-spacing: 10px;
+  line-height: 6rem;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    font-weight: bold;
+  }
+
+h2 {
+  font-size: 4.8rem;
+  padding-top: 10rem;
+  line-height: 0rem;
+}
+
+.project-header h2 {
+  line-height: 8rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+  }
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 5rem;
+}
+
+h5 {
+  font-size: 2.0rem;
+  line-height: 3rem;
+}
+
+h6 {
+  color: #955BA7;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+/*  margin: 30px 0px; */
+}
+
+p {
+  color: #616161;
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: normal;
+  /* font-weight: regular; */
+  letter-spacing: -.01rem;
+  line-height: 3.5rem;
+  /*margin: 50px 0px;*/
+  }
+
+  /* WRAPPERS */
+
+  .wrapper {
+    width: 100%;
+  }
+
+  /* WRAPPER 2 FOR PERSONAS ONLY */
+  .wrapper2 {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .wrapperintro {
+    width: 70%;
+  }
+
+/* FOR ROLES/DESIGN DELIVERABLES */
+.designspecs a{
+  text-decoration: none;
+}
+
+
+/* STYLING FOR USER PERSONAS AND COMPETITIVE ANALYSIS */
+.details h5 {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.details p {
+  line-height: 3.0rem;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+}
+
+.details img {
+  align-items: center;
+}
+
+.bigpiclink {
+  font-size: 0;
+  text-align: center;
+  width: 100%;  /* Container's dimensions */
+  height: 100%;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.space {
+  padding-top: 4rem;
+}
+
+
+/* FOR THE COLUMN/ROWS */
+
+.column p {
+  font-size: 1.6rem;
+  spacing: 0px;
+  line-height: -4em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+
+.columncenter li {
+  font-size: 1.6rem;
+  spacing: 0px;
+  line-height: -4em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* FOR COMPETITIVE ANALYSIS */
+.details {
+  width: 80%;
+}
+
+.rowdetails h4 {
+  margin-bottom: 4rem;
+}
+
+.subcategory {
+  font-weight: 700;
+  padding-top: 3rem;
+
+}
+
+.subcategory p {
+  font-weight:700;
+  /*background-color: red; */
+  margin-top: 1.5rem;
+}
+
+
+
+/* FOR THE NAVIGATION */
+
+.nav-header {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 1%;
+}
+
+.nav-header a {
+  color: #616161;
+  text-decoration: none;
+}
+
+
+.nav-header h1 {
+}
+
+.header {
+  display: flex;
+  flex: 1;
+}
+
+.header img {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  size: 100%;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  margin: 0rem;
+}
+
+.nav-items li {
+  display: inline-flex;
+  color: #141414;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 0rem;
+  padding-right: 4rem;
+}
+
+
+.nav-header .link {
+  color: #955BA7;  /* purple */
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* NAVIGATION CONTACT BUTTON */
+.nav-header .contact {
+  color: #000;
+}
+
+.nav-items .button {
+letter-spacing: .1rem;
+color: white;
+padding: 8px 20px;
+}
+
+
+/* FOR THE TOP HEADER*/
+
+.project-hero {
+  position: relative;
+  text-align: left;
+}
+
+.project-header {
+  position: absolute;
+  top: 2%;
+  padding-left: 10%;
+  width: 40%;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 90%;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0rem;
+  width: 100%;
+}
+
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0rem;
+  width: 60%;
+}
+
+.wireframephotos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* FOR THE 3 COLUMN ROW */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columncenter {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+/* NEED ASSISTANCE ON CENTERING LOGOS */
+.columncenter img {
+  max-width: 100%;
+  height: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/* MIGHT NEED TO EDIT
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+*/
+
+/* FOR THE 4 COLUMN ROW */
+
+.row4 {
+  padding:0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.column4 {
+  text-align: center;
+  margin: 0em;
+  flex: 1 1 auto;
+  width: 25%;
+}
+
+
+/* FOR A NEW CATEGORY */
+
+.largeheadline {
+  align-items: center;
+  padding-top: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* FOR THE SECTIONS WITH ICON2 AND DESCRIPTION */
+
+.sectionwrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.sectionwrapperleft {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.sectioncentered {
+  width: 51%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.sectioncentered h3 {
+  padding-bottom: 3rem;
+}
+
+.sectioncentered p {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.sectioncenteredwider {
+  width: 70%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.sectionmiddle {
+  width: 50%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.icon2 {
+  display: block;
+  justify-content: center;
+  width: 10%;
+}
+
+
+.processdescription {
+  display: inline;
+  justify-content: center;
+  width: 70%;
+}
+
+.evolution h3 {
+  text-align: center;
+}
+
+.closingparagraph p {
+  flex-wrap: nowrap;
+  font-size: 2.4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width:100%;
+}
+
+
+/* SPACING FOR ALL THE INTRO DESCRIPTION HEADINGS */
+.desc-intro h3 {
+  padding-bottom: .5rem;
+}
+
+.desc-intro h5 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.desc-intro h6 {
+  padding-bottom: 2rem;
+}
+
+
+.desc-intro p {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* FOR THE 3 COLUMN MIND MAPPING SKETCHING*/
+.column-three h4 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.column-three p {
+  line-height: 3rem;
+  padding: 0;
+  text-align: left;
+}
+
+
+.padding {
+  padding-right: 20%;
+}
+
+/* FLEXBOX SIZING */
+
+.newsection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+.title {
+  display: flex;
+  width: 30%;
+}
+
+.description {
+  display: flex;
+  width:70%;
+}
+
+
+
+
+@media screen and (min-width: 110em) {
+
+}
+
+  /* ALL BUTTONS */
+.button {
+  background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 1.9%, rgba(94,46,165,1) 90.1% );
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  /*font-face: "Open Sans"; */
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.buttonfixed {
+  background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 1.9%, rgba(94,46,165,1) 90.1% );
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  /*font-face: "Open Sans"; */
+  font-size: 1.4rem;
+  font-weight: 600;
+  min-width: 30rem;
+  letter-spacing: 0.1rem;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* FOR A CENTERED BUTTON */
+
+.project-button {
+  height: 10rem;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+/* FOR CENTERED BUTTONS AT END */
+
+.project-button2 {
+  height: 8rem;
+  justify-content: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+/* BACK TO TOP LINK */
+.backtotopcontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:  flex-end;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 85%;
+}
+
+.backtotopcontainer a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* FOR THE FOOTER */
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.footerlogo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+.footerlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerlinks a {
+  padding: 2.5rem;
+  text-decoration: none;
+}
+
+.sociallinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 200px;
+}
+
+
+.sociallinks img {
+  padding: 10px;
+}
+
+.copywright {
+  text-align: center;
+  padding-bottom: 2%;
+}

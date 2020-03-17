@@ -9,466 +9,861 @@
   <!--Reset.css-->
   <link rel="stylesheet" href="css/reset.css">
 
-  <!-- Font is awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- FONTS -->
+  <link href="LemonMilk.woff" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
 
   <!--Custom Styles-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
-  <div class="container">
-    <nav>
-      <img src="images/logo/mn_logo.svg" width=65 alt="logo">
-      <h3>Michelle Nicole Design</h3>
-      <a href="about.html">about</a>
-      <a href="project.html">portfolio</a>
+  <nav class="nav-header">
+    <div class="header">
+      <a href="index.html"><img src="images/logo/mn_logo.svg" width=65 height=68 alt="logo"></a>
+      <a href="index.html">
+        <h1>Michelle Nicole Design</h1>
+      </a>
+    </div>
+    <ul class="nav-items">
+      <li><a class="link" style="float:right" href="about.html">About</a></li>
+      <li><a class="link" style="float:right" href="project.html">Portfolio</a></li>
       <!--button to contact-->
-      <button onclick="window.location.href = 'https://contact.html';">contact</button>
-    </nav>
+      <li><a class="contact button" href="contact.html">contact</a></li>
+    </ul>
+  </nav>
 
-    <!--HERO BANNER-->
-    <section class="project-hero">
-      <img src="images/fitpath/hero.png" alt="hero">
+  <!--HERO BANNER-->
+  <div class="project-hero">
+    <img src="images/fitpath/hero.jpg" alt="hero" width=100%>
+    <div class="project-header">
       <h2>FitPath</h2>
       <p>The fitness application helping people of all ages and experiences easily discover the perfect workouts that fit their needs and goals.</p>
-      <a class="button" href="https://projects.invisionapp.com/share/UGVBV6KTHZF#/screens">View on Invision</a>
-    </section>
+    </div>
+  </div>
 
-    <!--Roles/Design Deliverables/Specifications-->
-    <section>
-      <img class="roles" src="images/ico/userflows.svg" alt="">
-      <p>
-      <ul>
-        <li>
-          <h4>Roles</h4>
-        </li>
-        <li>Product Designer</li>
-        <li>UX Researcher</li>
-        <li>Content Strategist</li>
-        <li>UX Designer (UX Architect)</li>
-        <li>Visual Designer</li>
-      </ul>
+  <div class="project-button">
+    <div class="centered-button">
+      <a class="button invision" href="https://projects.invisionapp.com/share/UGVBV6KTHZF#/screens">View on Invision</a>
+    </div>
+  </div>
 
-      <img class="deliverables" src="images/ico/designdeliverables.svg" alt="">
-      <ul>
-        <li>
-          <h4>Design Deliverables</h4>
-        </li>
-        <li class="subcategory">
-          <strong>Discovery Phase</strong>
-        </li>
-        <li>User Surveys</li>
-        <li>Competitive Analysis</li>
-        <li>User Personas</li>
-      </ul>
-      <br>
-      <ul>
-        <li class="subcategory">Information Architecture</li>
-        <li>User Stories</li>
-        <li>User Flows</li>
-        <li>Content Strategy</li>
-        <li>Wireframes</li>
-        <li>Clickable Prototype</li>
-        <li>Usability Testing</li>
-      </ul>
-      <br>
-      <ul>
-        <li class="subcategory">Visual Design</li>
-        <li>Branding</li>
-        <li>Moodboards</li>
-        <li>Style Guide</li>
-        <li> High Fidelity Mockups</li>
-        <li>Preference A/B Testing</li>
-        <li>Final Design</li>
-      </ul>
+  <div class="container">
+    <div class="wrapperintro">
 
-      <img class="specifications" src="images/ico/specifications.svg" alt="">
-      <ul>
-        <li class="subcategory">Tools </li>
-        <li>Figma</li>
-        <li>InVision</li>
-        <li>Maze</li>
-        <li>Draw.io</li>
-        <li>Usability Hub</li>
-        <li>Adobe Photoshop</li>
-        <li>Duration</li>
-        <li>10 weeks</li>
-      </ul>
+      <!--Roles/Design Deliverables/Specifications-->
+      <div class="row designspecs">
+        <div class="columncenter rowdetails">
 
-    </section>
+            <img class="icon" src="images/ico/userflows.svg" alt="">
+            <ul>
+              <li>
+                <h4>Roles</h4>
+              </li>
+              <li>
+                <p>Product Designer</p>
+              </li>
+              <li>
+                <p>UX Researcher</p>
+              </li>
+              <li>
+                <p>Content Strategist</p>
+              </li>
+              <li>
+                <p>UX Designer (UX Architect)</p>
+              </li>
+              <li>
+                <p>Visual Designer</p>
+              </li>
+            </ul>
+          </div>
 
-    <!--Summary/Problem/Solution-->
-    <section>
-      <h3>
-        Summary
-      </h3>
-      <p>
-        When people start their fitness journey, for most, it takes years to figure out what they really like to do. FitPath, the fitness cloud storage & search engine was created to disrupt the fitness industry and allow people of all ages and
-        experiences to easily discover their perfect workouts. With the help of AI and our database of workouts from all over the internet, FitPath will know exactly what users are enjoying so each new workout that you crush is better than the last.
-      </p>
-      <br>
-      <br>
-      <h3>
-        Problem
-      </h3>
-      <p>
-        The $30 billion health and fitness industry in the U.S. has been growing by at least 3-4% annually. With over 1 in 5 Americans belonging to at least one U.S. health club or studio, most people are intimidated by, or don’t know what to do when
-        they first join a gym and/or start their fitness journey.
-      </p>
-      <br>
-      <br>
-      <h3>
-        Solution
-      </h3>
-      <p>
-        We created FitPath, an application to find workouts that fit their needs and goals. Our client wanted to enter the cloud storage & organizational market. In FitPath, workouts can be found within minutes, saved (into FitBoards), uploaded,
-        shared, even and collaborated with trainers or other users in the form of videos, photos, documents, spreadsheets, and more.
-      </p>
-    </section>
+        <div class="columncenter">
+          <img class="icon" src="images/ico/designdeliverables.svg" alt="">
+          <ul>
+            <li>
+              <h4>Design Deliverables</h4>
+            </li>
+            <li class="subcategory">
+              <a href="#discoverystrategy">
+                <p>Discovery & Strategy Phase</p>
+              </a>
+            </li>
+            <li>
+              <a href="#usersurveys">
+                <p>User Surveys</p>
+              </a>
+            </li>
+            <li>
+              <a href="#competitiveanalysis">
+                <p>Competitive Analysis</p>
+              </a>
+            </li>
+            <li>
+              <a href="#userpersonas">
+                <p>User Personas</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="subcategory">
+              <a href="#informationarchitecture">
+                <p>Information Architecture</p>
+              </a>
+            </li>
+            <li>
+              <a href="#userstories">
+                <p>User Stories</p>
+              </a>
+            </li>
+            <li>
+              <a href="#userflows">
+                <p>User Flows</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contentstrategy">
+                <p>Content Strategy</p>
+              </a>
+            </li>
+            <li>
+              <a href="#wireframes">
+                <p>Wireframes</p>
+              </a>
+            </li>
+            <li>
+              <a href="#clickableprototype">
+                <p>Clickable Prototype</p>
+              </a>
+            </li>
+            <li>
+              <a href="#usabilitytesting">
+                <p>Usability Testing</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="subcategory">
+              <a href="#visualdesign">
+                <p>Visual Design</p>
+              </a>
+            </li>
+            <li>
+              <a href="#branding">
+                <p>Branding</p>
+              </a>
+            </li>
+            <li>
+              <a href="#moodboards"><p>Moodboards</p></a>
+            </li>
+            <li>
+              <a href="#styleguide">
+                <p>Style Guide</p>
+              </a>
+            </li>
+            <li>
+              <a href="#highfidmockups">
+                <p> High Fidelity Mockups</p>
+              </a>
+            </li>
+            <li>
+              <a href="#preferencetesting">
+                <p>Preference A/B Testing</p>
+              </a>
+            </li>
+            <li>
+              <a href="#finaldesign">
+                <p>Final Design</p>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- STRATEGY PHASE -->
-    <h2>The Strategy Phase</h2>
+        <div class="columncenter">
+          <img class="icon" src="images/ico/specifications.svg" alt="">
+          <ul>
+            <li>
+              <h4>Specifications</h4>
+            </li>
+            <li class="subcategory">
+              <p>Tools</p>
+            </li>
+            <li>
+              <a href="https://www.figma.com" target="_blank">
+                <p>Figma</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.invisionapp.com/" target="_blank">
+                <p>InVision</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://maze.design/" target="_blank">
+                <p>Maze</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://draw.io" target="_blank"><p>Draw.io</p></a>
+            </li>
+            <li>
+              <a href="https://usabilityhub.com/" target="_blank"><p>Usability Hub</p></a>
+            </li>
+            <li>
+              <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><p>Adobe Photoshop</p></a>
+            </li>
+            <li class="subcategory">
+              <p>Duration</p>
+            </li>
+            <li>
+              <p>10 weeks</p>
+            </li>
+          </ul>
 
-    <!-- USER SURVEYS -->
-    <section class="surveys">
-      <img src="images/ico/people.svg" alt="">
-      <h6>User Surveys</h6>
-      <h3>Understanding our Target Market</h3>
-      <p>I wanted to see how fitness enthusiasts, personal trainers, trainees, and other active people could benefit, so to learn about our target market, I created and sent a survey to my friends, fitness network, and other people on social media. I
-        needed to learn:</p>
+        </div>
+      </div>
 
-      <ul>
-        <li>If our users incorporates fitness into their lifestyle;</li>
-        <li>Where our users like to workout;</li>
-        <li>If users followed workouts on the web;</li>
-        <li>The type of fitness/lifestyle goals our users would like to set for themselves;
-        <li>How our users track their progress;</li>
-        <li>What our users think the most valuable features are for tracking and reaching their fitness goals.</li>
-      </ul>
 
-      <a class="button" href="">View Survey</a>
-    </section>
+      <!--Summary/Problem/Solution-->
+      <section>
+        <div class="newsection">
+          <div class="title">
+            <h3>
+              Summary
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              When people start their fitness journey, for most, it takes years to figure out what they really like to do. FitPath, the fitness cloud storage & search engine was created to disrupt the fitness industry and allow people of all ages
+              and
+              experiences to easily discover their perfect workouts. With the help of AI and our database of workouts from all over the internet, FitPath will know exactly what users are enjoying so each new workout that you crush is better than
+              the last.
+            </p>
+          </div>
+        </div>
 
-    <section class="surveyresults">
-      <ul>
-        <li>
-          <h3>66.7%</h3>
-          <h6>said they want to or already incorporate fitness into their lifestyle</h6>
-        </li>
-        <li>
-          <h3>64.3%</h3>
-          <h6>want to lose weight</h6>
-        </li>
-        <li>
-          <h3>57.1%</h3>
-          <h6>want to build muscle</h6>
-        </li>
-        <li>
-          <h3>56.1%</h3>
-          <h6>working out by themselves at a gym or outdoors</h6>
-        </li>
-      </ul>
-    </section>
+        <div class="newsection">
+          <div class="title">
+            <h3>
+              Problem
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              The $30 billion health and fitness industry in the U.S. has been growing by at least 3-4% annually. With over 1 in 5 Americans belonging to at least one U.S. health club or studio, most people are intimidated by, or don’t know what to
+              do when
+              they first join a gym and/or start their fitness journey.
+            </p>
+          </div>
+        </div>
 
-    <section class="competitiveanlaysis">
-      <img class="competitiveanalysis" src="images/ico/competitiveanalysis.svg" alt="">
-      <h6>Competitive Analysis</h6>
-      <h3>Looking at the current competition</h3>
-      <p>I ran a competitive analysis so that we understand our target market and competition. Since we were still brand new in figuring out what type of product to create in the “cloud storage and organization market”, I chose three different
-        companies: Dropbox, Pinterest, and a makeup beauty search engine named Mira to understand what they are doing well, and what problems could improve on. Dropbox is strictly cloud storage, one pinning and saving imagery and content from all
-        over the web, and the last uses AI and pulls from reviews all over the internet to find the best makeup for users.
-      </p>
 
-      <img class="dropbox" src="images/fitpath/dropbox.jpg" alt="dropbox">
-      <h5>Dropbox</h5>
-      <p>“Dropbox is a place where all your team’s content comes together.”
-        <br>
-        <br>
-        <strong>Strengths</strong>
-        <br>
-        No need to carry around a thumb drive anymore; can share files via email
-        Simple and easy to use
-        <br>
-        <br>
-        <strong>Weakness</strong>
-        <br>
-        The low conversion rate for individual users - free to be a paid user. Users could easily use another free cloud storage
-        Cost per space is not as affordable to a general user
-        <br>
-        <br>
-        <strong>Opportunities</strong>
-        <br>
-        Always innovating and adding more features
-        Helps other businesses move towards working on the cloud - storing, organizing, and cross-collaboration
-        <br>
-        <br>
-        <strong>Threats</strong>
-        <br>
-        Large corporations like Google already have a user base integrated with all other applications such as Google Chrome, so the engagement is high for them to use Google Drive rather than Dropbox
-      </p>
+        <div class="newsection">
+          <div class="title">
+            <h3>
+              Solution
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              We created FitPath, an application to find workouts that fit their needs and goals. Our client wanted to enter the cloud storage & organizational market. In FitPath, workouts can be found within minutes, saved (into FitBoards),
+              uploaded,
+              shared, even and collaborated with trainers or other users in the form of videos, photos, documents, spreadsheets, and more.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <img class="pinterest" src="images/fitpath/pinterest.jpg" alt="pinterest">
-      <h5>Pinterest</h5>
-      <p>A “visual discovery engine for finding ideas like recipes, home and style inspiration, and more.”
-        <br>
-        <br>
-        <strong>Strengths</strong>
-        <br>
-        Boards are versatile and can be made for any type of category and interests, and creates a visual perspective
-        <br>
-        <br>
-        <strong>Weaknesses</strong>
-        <br>
-        Seems to be geared more towards women, leaving the men out
-        <br>
-        <br>
-        <strong>Opportunities</strong>
-        <br>
-        Helps drive traffic to websites from pinning photos, helps grow and create new customers, website leads, ROI, and direct conversion
-        Helps plan life moments, an ideal home, vacation, food/cooking, accessories, beauty products, watches, and jewelry
-        <br>
-        <br>
-        <strong>Threats</strong>
-        <br>
-        Pinterest’s biggest competitor is Amazon, but no other big competitor in this space
-      </p>
+      <!-- STRATEGY PHASE -->
+      <div class="largeheadline" id="discoverystrategy">
+        <h2>The Strategy Phase</h2>
+      </div>
 
-      <img class="mira" src="images/fitpath/mira.jpg" alt="mira">
-      <h5>Mira</h5>
-      <p>“The beauty search engine app” that uses facial recognition and artificial intelligence to help pair users with the right products and beauty needs.
-        <br>
-        <br>
-        <strong>Strengths</strong>
-        <br>
-        An application that helps find beauty products based on your needs using artificial intelligence
-        Analyzes product reviews from all over the web to see if products are good or bad; and summarized for the user. Should be getting smarter as users begin posting questions and answering product reviews
-        <br>
-        <br>
-        <strong>Weaknesses</strong>
-        <br>
-        Brand new, only on iOS
-        <br>
-        <br>
-        <strong>Opportunities</strong>
-        <br>
-        This seems like one of the first apps that pulls a lot of different products together into one space
-        Helps someone into beauty find reviews and the right prices in one place
-        <br>
-        <br>
-        <strong>Threats</strong>
-        <br>
-        It seemed like it took 2 years for the application to come out - in due time, will there be a competitor?
-      </p>
-    </section>
+      <!-- USER SURVEYS -->
+      <section class="container" id="usersurveys">
+        <div class="sectionwrapper">
 
-    <section class="userpersonas">
-      <img class="" src="images/ico/userpersonas.svg" alt="">
-      <h6>User Personas</h6>
-      <h3>Empathizing with our users</h3>
-      <p>Taking all the information from our survey results, I analyzed the data and looked for patterns, trends, or outliers and created two personas to help put a name, face, and a backstory for all our potential users. By doing so, this helps
-        better empathize with our users and understand the user’s goals, behaviors, and how they would interact with our application.</p>
-      <img class="april" src="images/fitpath/april.jpg" alt="user persona">
-      <h5>April J.</h5>
-      <p>Age: 37
-        <br>
-        <strong>Occupation:</strong> Mom & Project Manager
-        <br>
-        <strong>Location:</strong> Bay Area, CA
-        <br>
-        <strong>Gender:</strong> Female
-        <br>
-        <br>
-        <strong>Motivations:</strong>
-        <br>
-        April is a very organized working professional and wears many hats. When she’s not at work, she’s’ at home ensuring her kids are taken care of. In order to make sure her kids are happy, she makes sure her and her husbands’ health, happiness,
-        and lifestyle comes first. Finding a workout plan (thats already been done and successful) for her fitness level at home, or at the gym would help get her motivated and back into shape.
-        <br>
-        <br>
-        <strong>Goals:</strong>
-        <br>
-        1. To document and save their family photos, videos, etc and safekeep those memories.
-        <br>
-        2. To start again and stay healthy by exercising so they can live long lives for themselves and their children.
-        <br>
-        3. To surf the web to find inspiration for almost everything. Shares workouts with friends to save and work on later.
-      </p>
-      <a class="button" href="" target=”_blank”><h6>View April J's Persona</h6></a>
-      <br>
+          <div class="icon2">
+            <img src="images/ico/people.svg" alt="">
+          </div>
 
-      <img class="john" src="images/fitpath/john.jpg" alt="user persona">
-      <h5>John C.</h5>
-      <p>
-        <strong>Age:</strong> 32
-        <br>
-        <strong>Occupation:</strong> Engineer
-        <br>
-        <strong>Location:</strong> Los Angeles, CA
-        <br>
-        <strong>Gender:</strong> Male
-        <br>
-        <br>
+          <div class="processdescription">
+            <section class="desc-intro">
+              <h6>User Surveys</h6>
+              <h3>Understanding our Target Market</h3>
+              <p>I wanted to see how fitness enthusiasts, personal trainers, trainees, and other active people could benefit, so to learn about our target market, I created and sent a survey to my friends, fitness network, and other people on social
+                media. I needed to learn:</p>
 
-        <strong>Motivations: </strong>
-        <br>
-        John stays connected to technology everyday. He stays up to date on what’s new, and uses cloud storage for almost everything at work: to share documents, pdfs, and also solutions for real-time collaboration with his teammates at work. After
-        work, John goes to the gym and focuses on building muscle groups. His friends meet him there at the gym and they train together by doing a workout they found online, or if one of the friends put it together.
-        <br>
-        <br>
-        <strong>Goals:</strong>
-        <br>
-        1. To ensure his team at work stays up to date with the most updated files
-        <br>
-        2. To build muscle, endurance, and get stronger
-        <br>
-        3. Track fitness progress & also between friends
+              <ul>
+                <li>
+                  <h5>If our users incorporates fitness into their lifestyle;</h5>
+                </li>
+                <li>
+                  <h5>Where our users like to workout;</h5>
+                </li>
+                <li>
+                  <h5>If users followed workouts on the web;</h5>
+                </li>
+                <li>
+                  <h5>The type of fitness/lifestyle goals our users would like to set for themselves;</h5>
+                </li>
+                <li>
+                  <h5>How our users track their progress;</h5>
+                </li>
+                <li>
+                  <h5>What our users think the most valuable features are for tracking and reaching their fitness goals.</h5>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
 
-      </p>
-      <a class="button" href="" target=”_blank”><h6>View John C's Persona</h6></a>
-    </section>
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="">View Survey</a>
+        </div>
+      </div>
 
-    <!-- INFORMATION ARCHITECTURE PHASE -->
-    <section>
-      <h2>Information Architecture Phase</h2>
+      <!--SURVEY RESULTS-->
+      <section class="newsection">
+        <p>This survey was completed with 15 surveyors. Here are some key results:</p>
+      </section>
+
+      <!--Roles/Design Deliverables/Specifications-->
+      <section class="surveyresults newsection">
+        <div class="row4">
+          <div class="column4">
+            <h3>66.7%</h3>
+            <h6>said they want to or already incorporate fitness into their lifestyle</h6>
+          </div>
+          <div class="column4">
+            <h3>64.3%</h3>
+            <h6>want to lose weight</h6>
+          </div>
+          <div class="column4">
+            <h3>57.1%</h3>
+            <h6>want to build muscle</h6>
+          </div>
+          <div class="column4">
+            <h3>56.1%</h3>
+            <h6>working out by themselves at a gym or outdoors</h6>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- COMPETITIVE ANALYSIS -->
+      <div class="container newsection" id="competitiveanalysis">
+        <section class="sectionwrapper">
+          <div class="icon2">
+            <img class="competitiveanalysis" src="images/ico/competitiveanalysis.svg" alt="">
+          </div>
+
+          <div class="processdescription">
+            <div class="desc-intro">
+              <h6>Competitive Analysis</h6>
+              <h3>Looking at the current competition</h3>
+              <p>I ran a competitive analysis so that we understand our target market and competition. Since we were still brand new in figuring out what type of product to create in the “cloud storage and organization market”, I chose three
+                different
+                companies: Dropbox, Pinterest, and a makeup beauty search engine named Mira to understand what they are doing well, and what problems could improve on. Dropbox is strictly cloud storage, one pinning and saving imagery and content from
+                all
+                over the web, and the last uses AI and pulls from reviews all over the internet to find the best makeup for users.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--3 COLUMN LAYOUT-->
+      <div class="wrapper">
+        <div class="row">
+          <div class="column competitiveanalysis">
+            <section class="details">
+              <img class="dropbox" src="images/fitpath/dropbox.jpg" alt="dropbox">
+              <h5>Dropbox</h5>
+              <p>“Dropbox is a place where all your team’s content comes together.”</p>
+
+              <p><b class="subcategory">Strengths</b><br>
+                No need to carry around a thumb drive anymore; can share files via email
+                Simple and easy to use</p>
+
+              <p><b class="subcategory">Weakness</b><br>
+
+                The low conversion rate for individual users - free to be a paid user. Users could easily use another free cloud storage
+                Cost per space is not as affordable to a general user</p>
+
+              <p><b class="subcategory">Opportunities</b><br>
+
+                Always innovating and adding more features</p>
+              <p>Helps other businesses move towards working on the cloud - storing, organizing, and cross-collaboration</p>
+
+              <p><b class="subcategory">Threats</b><br>
+
+                Large corporations like Google already have a user base integrated with all other applications such as Google Chrome, so the engagement is high for them to use Google Drive rather than Dropbox
+              </p>
+            </section>
+          </div>
+
+          <div class="column competitiveanalysis">
+            <!--added in competitive analysis, to make space between the columns but did not finish -->
+            <section class="details">
+              <img class="pinterest" src="images/fitpath/pinterest.jpg" alt="pinterest">
+              <h5>Pinterest</h5>
+              <p>A “visual discovery engine for finding ideas like recipes, home and style inspiration, and more.”</p>
+
+              <p><b class="subcategory">Strengths</b><br>
+
+                Boards are versatile and can be made for any type of category and interests, and creates a visual perspective</p>
+
+              <p><b class="subcategory">Weaknesses</b><br>
+
+                Seems to be geared more towards women, leaving the men out</p>
+
+              <p><b class="subcategory">Opportunities</b><br>
+
+                Helps drive traffic to websites from pinning photos, helps grow and create new customers, website leads, ROI, and direct conversion.</p>
+              <p>Helps plan life moments, an ideal home, vacation, food/cooking, accessories, beauty products, watches, and jewelry</p>
+
+              <p><b class="subcategory">Threats</b><br>
+
+                Pinterest’s biggest competitor is Amazon, but no other big competitor in this space</p>
+
+            </section>
+          </div>
+
+          <div class="column competitiveanalysis">
+            <section class="details">
+              <img class="mira" src="images/fitpath/mira.jpg" alt="mira">
+              <h5>Mira</h5>
+              <p>“The beauty search engine app” that uses facial recognition and artificial intelligence to help pair users with the right products and beauty needs.</p>
+
+              <p><b class="subcategory">Strengths</b><br>
+                An application that helps find beauty products based on your needs using artificial intelligence.
+                Analyzes product reviews from all over the web to see if products are good or bad; and summarized for the user. Should be getting smarter as users begin posting questions and answering product reviews.</p>
+
+              <p><b class="subcategory">Weaknesses</b><br>
+                Brand new, only on iOS</p>
+
+              <p><b class="subcategory">Opportunities</b><br>
+                This seems like one of the first apps that pulls a lot of different products together into one space</p>
+              <p>Helps someone into beauty find reviews and the right prices in one place</p>
+
+              <p><b class="subcategory">Threats</b><br>
+                It seemed like it took 2 years for the application to come out - in due time, will there be a competitor?</p>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <!--USER PERSONAS-->
+      <div class="newsection container2" id="userpersonas">
+        <section class="sectionwrapperleft">
+          <div class="icon2">
+            <img class="" src="images/ico/userpersonas.svg" alt="">
+          </div>
+          <div class="processdescription">
+            <section class="desc-intro">
+              <h6>User Personas</h6>
+              <h3>Empathizing with our users</h3>
+              <p>Taking all the information from our survey results, I analyzed the data and looked for patterns, trends, or outliers and created two personas to help put a name, face, and a backstory for all our potential users. By doing so, this
+                helps
+                better empathize with our users and understand the user’s goals, behaviors, and how they would interact with our application.</p>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <!-- 2 COLUMN -->
+      <div class="wrapper2">
+        <div class="row">
+
+          <div class="column">
+            <section class="details">
+              <img class="april" src="images/fitpath/april.jpg" alt="user persona">
+              <h5>April J.</h5>
+              <p><b class="subcategory">Age:</b> 37<br>
+                <b class="subcategory">Occupation:</b> Mom & Project Manager<br>
+                <b class="subcategory">Location:</b> Bay Area, CA<br>
+                <b class="subcategory">Gender:</b> Female</p>
+              <p><b class="subcategory">Motivations:</b></p>
+              <p>April is a very organized working professional and wears many hats. When she’s not at work, she’s’ at home ensuring her kids are taken care of. In order to make sure her kids are happy, she makes sure her and her husbands’ health,
+                happiness, and lifestyle comes first. Finding a workout plan (thats already been done and successful) for her fitness level at home, or at the gym would help get her motivated and back into shape.</p>
+              <p><b class="subcategory">Goals:</b></p>
+              <ol>
+                <li>
+                  <p>1. To document and save their family photos, videos, etc and safekeep those memories.</p>
+                </li>
+                <li>
+                  <p>2. To start again and stay healthy by exercising so they can live long lives for themselves and their children.</p>
+                </li>
+                <li>
+                  <p>3. To surf the web to find inspiration for almost everything. Shares workouts with friends to save and work on later.</p>
+                </li>
+              </ol>
+
+              <div class="newsection">
+                <a class="button" href="" target=”_blank”>
+                  View April J's Persona
+                </a>
+              </div>
+
+            </section>
+          </div>
+
+
+          <div class="column">
+            <section class="details">
+              <img class="john" src="images/fitpath/john.jpg" alt="user persona">
+              <h5>John C.</h5>
+              <p><b class="subcategory">Age:</b> 32<br>
+                <b class="subcategory">Occupation:</b> Engineer<br>
+                <b class="subcategory">Location:</b> Los Angeles, CA<br>
+                <b class="subcategory">Gender:</b> Male</p>
+
+              <p><b class="subcategory">Motivations:</b></p>
+              <p>John stays connected to technology everyday. He stays up to date on what’s new, and uses cloud storage for almost everything at work: to share documents, pdfs, and also solutions for real-time collaboration with his teammates at
+                work.
+                After work, John goes to the gym and focuses on building muscle groups. His friends meet him there at the gym and they train together by doing a workout they found online, or if one of the friends put it together.</p>
+
+              <p><b class="subcategory">Goals:</b></p>
+              <ol>
+                <li>
+                  <p>1. To ensure his team at work stays up to date with the most updated files</p>
+                </li>
+                <li>
+                  <p>2. To build muscle, endurance, and get stronger</p>
+                </li>
+                <li>
+                  <p>3. Track fitness progress & also between friends</p>
+                </li>
+              </ol>
+
+              <!--FIX SPACIAL ISSUE WITH THE BUTTONS -->
+              <div class="newsection">
+                <a class="button" href="" target=”_blank”>
+                  View John C's Persona
+                </a>
+
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- NEW SECTION: INFORMATION ARCHITECTURE PHASE -->
+      <section>
+        <div class="largeheadline" id="informationarchitecture">
+          <h2>Information Architecture Phase</h2>
+        </div>
+      </section>
+
+
       <!-- USER STORIES -->
-      <img class="" src="images/ico/userstories.svg" alt="">
-      <h6>User Stories</h6>
-      <h3>Stories for every user</h3>
-      <p>Creating user stories helped me create and prioritize tasks that must be accounted for in the application.</p>
-      <ul>
-        <li>As a new user I want to find workouts that fit my needs / goals</li>
-        <li>As a returning user I want to save workout content I find around the web (links, images, videos, etc)</li>
-        <li>As a returning user, I want to organize workout content (into categories, groups, and/or folders)</li>
-        <li>As a returning user, I want to share a single item with someone else/trainer (and vice versa - workout/photo)</li>
-        <li>As a returning user, I want to connect with other users for real-time collaboration in notes or documents</li>
-      </ul>
-    </section>
+      <section class="newsection container2" id="userstories">
+        <div class="sectionwrapperleft">
 
-    <!-- USER FLOWS -->
-    <section class="userflows">
-      <img class="" src="images/ico/userflows.svg" alt="">
-      <h6>User Flows</h6>
-      <h3>Step by step, click by click, tap by tap.</h3>
-      <p>Creating user flows helps us understand how each item relates to other items on each page on a website or in an application. Look back at the surveys, user personas, competitive analysis, user stories to help create these user flows.</p>
-      <p>Anything at high priority from the user stories, I created a user flow and sketch before turning them to digital. I even included lower to medium user stories - but just enough for the MVP minimum viable product.</p>
+          <div class="icon2">
+            <img class="" src="images/ico/userstories.svg" alt="">
+          </div>
 
-      <p>I learned that as you go along the design process, any step of the way, like the user flows, don’t have to be set in stone, they could also change too after you build out wireframes.</p>
-      <img src="images/fitpath/userflows_draw1.jpg" alt="user flow drawings">
-      <img src="images/fitpath/userflows_draw2.jpg" alt="user flow drawings">
-      <img src="images/fitpath/FitPathUserFlows.png" alt="user flows">
-      <a class="button" href="https://drive.google.com/open?id=1kChS-vUCMcRYaCtxryFNdpzZCArSchZYLm0ybXn7CLU" target="_blank">View User Flows</a>
-    </section>
+          <div class="processdescription desc-intro">
+            <h6>User Stories</h6>
+            <h3>Stories for every user</h3>
+            <p>Creating user stories helped me create and prioritize tasks that must be accounted for in the application.</p>
+            <ul>
+              <li>
+                <h5>As a new user I want to find workouts that fit my needs / goals</h5>
+              </li>
+              <li>
+                <h5>As a returning user I want to save workout content I find around the web (links, images, videos, etc)</h5>
+              </li>
+              <li>
+                <h5>As a returning user, I want to organize workout content (into categories, groups, and/or folders)</h5>
+              </li>
+              <li>
+                <h5>As a returning user, I want to share a single item with someone else/trainer (and vice versa - workout/photo)</h5>
+              </li>
+              <li>
+                <h5>As a returning user, I want to connect with other users for real-time collaboration in notes or documents</h5>
+              </li>
+            </ul>
 
-    <!-- CONTENT STRATEGY -->
-    <section>
-      <img class="" src="images/ico/contentstrategy.svg" alt="">
-      <h6>Content Strategy</h6>
-      <h3>Building the baseline of this application</h3>
-      <p>At this point, I decided this is going to be a mobile application because when people workout, what devices do you usually see with them? Typically, I see them with mobile devices, if anything at all. Do we see people working out at the gym
-        with their laptops? (I would like to build one in the roadmap ahead, but for now we will start with a mobile app). </p>
-      <p>The Content Strategy phase helped build an overview map of how the application would work as well as help conceptualize what imagery I will use in the designs for implementing into the wireframes.</p>
-      <img src="images/fitpath/contentstrategy.jpg" alt="content strategy">
-      <a class="button" href="" target="_blank">View Content Strategy</a>
-    </section>
+          </div>
+        </div>
 
-    <!-- WIREFRAMES -->
-    <section class="wireframes">
-      <img class="" src="images/ico/wireframes.svg" alt="">
-      <h6>Wireframes</h6>
-      <h3>Building out the application</h3>
-      <p>It was important to visualize our application in wireframes before we begin building. What if something didn’t work? When I built out the wireframes and began testing, I found during this process there were too many onboarding screens, and
-        the same “share” buttons. Throughout this process, I was able to refine the application.</p>
-      <img src="images/fitpath/wireframes/fitpath_wireframe_001.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe_002.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe_003.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe_004.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_001.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_002.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_003.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_004.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_005.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_006.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_007.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_008.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_009.png" width=200 alt="">
-      <img src="images/fitpath/wireframes/fitpath_wireframe2_010.png" width=200 alt="">
-    </section>
+      </section>
 
-    <section>
-      <h6>User Testing Round 1</h6>
-      <h3>Testing the wireframes with our users</h3>
-      <p>We tested out our user stories, made iterations to both the wireframes and the user stories, and then created a clickable prototype in InVision, and then running usability testing on the wireframes to make any changes if users ran into any
-        issues. I found my users were having issues finding the “more options” button on each individual workout, and one of the menus needed work, so I made changes on these menus.</p>
-      <img src="images/fitpath/usertesting1.jpg" alt="Invision user testing round 1">
-    </section>
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="https://docs.google.com/spreadsheets/d/1csx0QPXrobFeO6HVQyNb4-RnpFPBQE-VcGrYZPK6Q30/edit?usp=sharing" target="_blank">View User Stories</a>
+        </div>
+      </div>
 
-    <section>
-      <h2>The Visual Design Phase</h2>
-    </section>
+      <!-- USER FLOWS -->
+      <section class="newsection container2" id="userflows">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/userflows.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>User Flows</h6>
+            <h3>Step by step, click by click, tap by tap.</h3>
+            <p>Creating user flows helps us understand how each item relates to other items on each page on a website or in an application. Look back at the surveys, user personas, competitive analysis, user stories to help create these user flows.
+            </p>
+            <p>Anything at high priority from the user stories, I created a user flow and sketch before turning them to digital. I even included lower to medium user stories - but just enough for the MVP minimum viable product.</p>
+
+            <p>I learned that as you go along the design process, any step of the way, like the user flows, don’t have to be set in stone, they could also change too after you build out wireframes.</p>
+            <a href="images/fitpath/userflows_draw1.jpg" target="_blank"><img src="images/fitpath/userflows_draw1.jpg" alt="user flow drawings"></a>
+            <a href="images/fitpath/userflows_draw2.jpg" target="_blank"><img src="images/fitpath/userflows_draw2.jpg" alt="user flow drawings"></a>
+
+            <div class="bigpiclink">
+              <a href="images/fitpath/FitPathUserFlows.png" target="_blank"><img class="bigpic" src="images/fitpath/FitPathUserFlows.png" alt="user flows"></a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="https://drive.google.com/open?id=1kChS-vUCMcRYaCtxryFNdpzZCArSchZYLm0ybXn7CLU" target="_blank">View User Flows</a>
+        </div>
+      </div>
+  <!--    </section> -->
+
+
+
+
+
+      <!-- CONTENT STRATEGY -->
+      <section class="newsection container2" id="contentstrategy">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/contentstrategy.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>Content Strategy</h6>
+            <h3>Building the baseline of this application</h3>
+            <p>At this point, I decided this is going to be a mobile application because when people workout, what devices do you usually see with them? Typically, I see them with mobile devices, if anything at all. Do we see people working out at
+              the
+              gym
+              with their laptops? (I would like to build one in the roadmap ahead, but for now we will start with a mobile app). </p>
+            <p>The Content Strategy phase helped build an overview map of how the application would work as well as help conceptualize what imagery I will use in the designs for implementing into the wireframes.</p>
+
+            <div class="bigpiclink">
+              <a href="images/fitpath/contentstrategy.jpg" target="_blank"><img src="images/fitpath/contentstrategy.jpg" alt="content strategy"></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="" target="_blank">View Content Strategy</a>
+        </div>
+      </div>
+
+      </section>
+
+
+      <!-- WIREFRAMES -->
+      <section class="newsection container2" id="wireframes">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/wireframes.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>Wireframes</h6>
+            <h3>Building out the application</h3>
+            <p>It was important to visualize our application in wireframes before we begin building. What if something didn’t work? When I built out the wireframes and began testing, I found during this process there were too many onboarding
+              screens,
+              and the same “share” buttons. Throughout this process, I was able to refine the application.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!--WIREFRAME IMAGES -->
+      <section class="sectioncenteredwider">
+        <img src="images/fitpath/wireframes/fitpath_wireframe_001.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe_002.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe_003.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe_004.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_001.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_002.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_003.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_004.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_005.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_006.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_007.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_008.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_009.png" width=200 alt="">
+        <img src="images/fitpath/wireframes/fitpath_wireframe2_010.png" width=200 alt="">
+      </section>
+
+      <!-- USER TESTING ROUND 1 -->
+      <section class="newsection container2" id="usabilitytesting">
+        <div class="row leftalign">
+
+          <div class="column processdescription">
+            <div class="desc-intro padding">
+              <h6>User Testing Round 1</h6>
+              <h3>Testing the wireframes with our users</h3>
+              <p>We tested out our user stories, made iterations to both the wireframes and the user stories, and then created a clickable prototype in InVision, and then running usability testing on the wireframes to make any changes if users ran
+                into
+                any
+                issues. I found my users were having issues finding the “more options” button on each individual workout, and one of the menus needed work, so I made changes on these menus.</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <img src="images/fitpath/usertesting1.jpg" alt="Invision user testing round 1">
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!--NEW SECTION: VISUAL DESIGN PHASE-->
+      <section id="visualdesign">
+        <div class="largeheadline">
+          <h2>The Visual Design Phase</h2>
+        </div>
+      </section>
+
+
+      <!--div to close wrapperintro-->
+    </div>
 
     <!-- BRANDING -->
-    <section>
-      <h3>Mind Mapping & Sketching</h3>
-      <p>For a long time throughout this process, this application remained nameless. I liked the idea of incorporating the word “fitness” and combining it with another word, so I created a mind mapping activity here which stems from the word
-        “fitness” and goes to all these different ideas that I want to touch.  Once the name FitPath ws born, I began sketching out logos.</p>
-      <img src="images/fitpath/fitpath_mindmapping.JPG" width=350 alt="mind mapping"><img src="images/fitpath/logosketches.JPG" width=350 alt="logo sketches">
-      <p>I chose the name FitPath is because everyone goes on their own path, or journey, and this application allows you to find the best workouts that fit your needs - allowing you to make your path. Throughout your path, it doesn’t always have to
-        be a linear line to your end goal, if in case life shifts or changes, you can make changes as necessary, as there isn’t just one way to get there.</p>
-      <p>Some slogans can be: “Everyone creates their own fit path”.</p>
+    <section class="newsection sectioncenteredwider" id="branding">
+      <div class="row leftalign">
+
+        <div class="column">
+          <div class="column-three padding">
+            <h4>Mind Mapping & Sketching</h4>
+            <p>For a long time throughout this process, this application remained nameless. I liked the idea of incorporating the word “fitness” and combining it with another word, so I created a mind mapping activity here which stems from the word
+              “fitness” and goes to all these different ideas that I want to touch.  Once the name FitPath ws born, I began sketching out logos.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <a href="images/fitpath/fitpath_mindmapping.JPG" target="_blank"><img src="images/fitpath/fitpath_mindmapping.JPG" width=350 alt="click to view larger mind mapping"></a>
+        </div>
+        <div class="column">
+          <a href="images/fitpath/logosketches.JPG" target="_blank"><img src="images/fitpath/logosketches.JPG" width=350 alt="click to view larger"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectioncentered">
+      <p>I chose the name FitPath is because everyone goes on their own path, or journey. FitPath application allows you to find the best workouts that fit your needs - allowing you to make your path.</p>
+      <p>A suggested sloagan would be:</p>
+      <h4>“Everyone creates their own FitPath”.</h4>
     </section>
 
     <!-- TYPOGRAPHY & LOGO-->
-    <section>
+
+    <section class="newsection sectioncentered">
       <h3>Typography & The FitPath Logo</h3>
-      <p>This FitPath logo has a rectangle around “FitPath” which represents the path of your fitness journey. Throughout your path, it doesn’t always have to be a linear line to your end goal, if in case life shifts or changes, you can make changes
+      <p>This FitPath logo has a rectangle around “FitPath” which represents the path of your fitness journey. Throughout your path, it doesn’t always have to be a linear line to your end goal, if in case life shifts or changes, you can make
+        changes
         as necessary, as there isn’t just one way to get there.</p>
       <p>I selected one of these logos and refined it with different fonts and weights. Looking at both fonts Montserrat and Roboto, I tested the logo with both.</p>
       <p>Refining the logo took some time and was refined and finished after building the style guide.</p>
+    </section>
+
+    <section class="sectioncenteredwider">
       <img src="images/fitpath/fitpath_logo.jpg" width=1100 alt="fitpath logo">
-      <img src="images/fitpath/logosketch.png" width=318 alt="fitpath logo">
-      <img src="images/fitpath/arrowright.svg" alt="arrow right">
-      <img src="images/fitpath/logoillustrator.png" width=318 alt="fitpath logo">
-      <img src="images/fitpath/arrowright.svg" alt="arrow right">
-      <img src="images/fitpath/fitpath_logo_blue.png" width=180 alt="fitpath logo final">
-      <h4>Sketches</h4>
-      <p>Here are sketches of two possible options. Sketching helped get ideas down and took less than a minute to draw.</p>
-      <h3>Logo Refinement</h3>
-      <p>Here is the FitPath logo created and refined by using Figma & Adobe Illustrator.</p>
-      <h3>Final Logo</h3>
-      <p>Added a blue gradient and made the “Path” bolder and the size and weight of the outside outline</p>
+
+      <div class="newsection row">
+
+        <div class="columncenter">
+          <img src="images/fitpath/logosketch.png" width=100% alt="fitpath logo">
+          <h4>Sketches</h4>
+          <p>Here are sketches of two possible options. Sketching helped get ideas down and took less than a minute to draw.</p>
+        </div>
+
+        <div class="columncenter">
+          <img src="images/fitpath/logoillustrator.png" width=100% alt="fitpath logo">
+          <h4>Logo Refinement</h4>
+          <p>Here is the FitPath logo created and refined by using Figma & Adobe Illustrator.</p>
+        </div>
+
+        <div class="columncenter">
+          <img src="images/fitpath/fitpath_logo_blue.png" width=100% alt="fitpath logo final">
+          <h4>Final Logo</h4>
+          <p>Added a blue gradient and made the “Path” bolder and the size and weight of the outside outline</p>
+        </div>
+
+      </div>
+
     </section>
 
 
     <!--STYLE GUIDE-->
-    <section class="style guide">
+    <section class="newsection sectioncentered" id="styleguide">
+
       <h3>Style Guide</h3>
       <p>Style Guide is created to share the direction of styling for the new application, FitPath. This helps with passing information down to the developers and the rest of the team who will be working on it.</p>
 
-        <p>The message I want to send to my users every day is to live a balanced and healthy life. I want to help find an easy way for my users to get started and stay motivated on their fit journey, or whichever path they want to take.</p>
+      <p>The message I want to send to my users every day is to live a balanced and healthy life. I want to help find an easy way for my users to get started and stay motivated on their fit journey, or whichever path they want to take.</p>
 
-        <p>I want the application to look clean, minimal, with a pop of color to be bright, but gender-neutral. We picked out typefaces, Monserrat and Hind, we chose colors in shades of blue.</p>
+      <p>I want the application to look clean, minimal, with a pop of color to be bright, but gender-neutral. I picked out typefaces, Monserrat and Hind, and chose colors in shades of blue.</p>
 
-        <p>Creating the style guide helped set a baseline and turn the wireframes into higher fidelity screens.</p>
-      <img src="images/fitpath/styleguide/001.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/002.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/003.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/004.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/005.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/006.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/007.png" width=255 alt="style guide">
-      <img src="images/fitpath/styleguide/008.png" width=255 alt="style guide">
-      <br>
-      <a class="button" href="">View Style Guide</a>
+      <p>Creating the style guide helped set a baseline and turn the wireframes into higher fidelity screens.</p>
+      <p> Click each photo below to enlarge.</p>
     </section>
 
-    <section>
+    <div class="sectioncenteredwider" id="moodboards">
+      <a href="images/fitpath/styleguide/001.png" target="_blank"><img src="images/fitpath/styleguide/001.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/002.png" target="_blank"><img src="images/fitpath/styleguide/002.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/003.png" target="_blank"><img src="images/fitpath/styleguide/003.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/004.png" target="_blank"><img src="images/fitpath/styleguide/004.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/005.png" target="_blank"><img src="images/fitpath/styleguide/005.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/006.png" target="_blank"><img src="images/fitpath/styleguide/006.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/007.png" target="_blank"><img src="images/fitpath/styleguide/007.png" width=255 alt="style guide"></a>
+      <a href="images/fitpath/styleguide/008.png" target="_blank"><img src="images/fitpath/styleguide/008.png" width=255 alt="style guide"></a>
+
+
+      <div class="space">
+        <a class="button" href="FitPath_StyleGuide.pdf" target="_blank">View Style Guide</a>
+      </div>
+    </div>
+
+
+    <section class="newsection sectioncentered" id="highfidmockups">
       <h3>Creating High Fidelity Mockups</h3>
       <img src="images/fitpath/hifimockups.jpg" alt="">
-      <p>In this stage I began to build high fidelity mockups. I re-iterated my wireframing process especially referencing the user flows and after user testing.</p>
+      <div class="space">
+        <p>In this stage I began to build high fidelity mockups. I re-iterated my wireframing process especially referencing the user flows and after user testing.</p>
 
-        <p>It took me a long time to transition into higher fidelity mockups going from empty wireframe squares to defined screens, but with the help of the style guide made consistency, and building them in Figma, it helped bring these screens to life.</p>
+        <p>It took me a long time to transition into higher fidelity mockups going from empty wireframe squares to defined screens, but with the help of the style guide made consistency, and building them in Figma, it helped bring these screens to
+          life.</p>
 
         <p>I learned that the design process helps lay the foundation for the high fidelity mockups and skipping a step early on could lead us to many more revisions in this phase.</p>
+      </div>
+    </section>
+
+    <div class="sectioncenteredwider">
       <img src="images/fitpath/h_screens/001.png" width=200 alt="">
       <img src="images/fitpath/h_screens/002.png" width=200 alt="">
       <img src="images/fitpath/h_screens/003.png" width=200 alt="">
@@ -479,115 +874,201 @@
       <img src="images/fitpath/h_screens/008.png" width=200 alt="">
       <img src="images/fitpath/h_screens/009.png" width=200 alt="">
       <img src="images/fitpath/h_screens/010.png" width=200 alt="">
-    </section>
+    </div>
 
-    <section>
-      <img class="" src="images/ico/preferencetesting.svg" alt="">
-      <h6>Preference Testing & second round of testing</h6>
-      <h3>Do you prefer this or that?</h3>
-      <p>I went through a second round of testing, which both included preference testing and another clickable prototype. For Preference testing, I wanted to see where to include more branding colors on the application.</p>
 
-        <p>From my 2nd clickable prototype testing, I ran three tests using Invision and Maze - two in person and one remote. Most users seemed to go through properly. Some users commented on the colors, but the biggest hurdle was finding the aqua
-        “more” button on the bottom right-hand side of each card. Most users did not know exactly what the icon does, click it, or would be able to find it. Also, I found some of the secondary text was a little small or too light for them to see, so
-        that was enlarged.</p>
-      <img src="images/fitpath/preferencetesting2.jpg" width=1100 alt="">
-      <p>Based on the feedback from these two tests, here’s what I changed on the design:</p>
-      <ul>
-        <li>
-          <p>• Added color to the navigation bars to empahsize which page they are on when selected</p>
-        </li>
-        <li>
-          <p>• Removed the “more” icon underneath each workout and added new buttons “Add” and “Share” to eliminate 1) ambiguity of the “more” icon and 2) an extra step/click for the user</p>
-        </li>
-        <li>
-          <p>• Enlarged some secondary text that was too small for readers, with maintaining heiarchy</p>
-        </li>
-      </ul>
-    </section>
+    <div class="wrapperintro">
 
-    <section class="finishingtouches">
-      <img class="" src="images/ico/finishingtouches.svg" alt="">
-      <h6>Finishing Touches</h6>
-      <h3>The Finishing Touches</h3>
-      <p>With all the feedback from the users and lead designers, we then revised the finishing touches. The biggest patterns I learned from reiterations and feedback were three things:  </p>
-      <ol>
-        <li>
-          <p>1. To maintain consistency is across each screen. This took a long time, with the number of screens I have.</p>
-        </li>
-        <li>
-          <p>2. Change the behavior of an aqua “more button” on the bottom right of the workouts to to a readible “add” and “share” clickable icon on each workout card.</p>
-        </li>
-      </ol>
-      <p>This eliminated an extra menu, step, and thought process a user needed to go through</p>
-      <img src="images/fitpath/finalscreens.jpg" width=1100 alt="">
-      <p>The fitness application helping people of all ages and experiences easily discover the perfect workouts that fit their needs and goals.</p>
-      <a class="button" href="https://projects.invisionapp.com/share/UGVBV6KTHZF#/screens">View on InVision</a>
-      <a class="button" href="https://www.figma.com/file/b2IBxuO01vT8V1kotbwRt4/FitPath-High-Fidelity-Mockups-%26-Wireframes---Michelle-Ng?node-id=1768%3A17166">View on Figma</a>
-    </section>
+      <section class="newsection container2" id="preferencetesting">
+        <div class="sectionwrapperleft">
 
-    <section>
-      <h3>The Evolution of FitPath</h3>
-      <img src="images/fitpath/fitpathevolution.png" alt="">
+          <div class="icon2">
+            <img class="" src="images/ico/preferencetesting.svg" alt="">
+          </div>
 
-      <h3>A few of the Final Screens</h3>
-      <img src="images/fitpath/f_screens/fitpath_final_001.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_002.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_003.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_004.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_005.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_006.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_007.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_008.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_009.png" width=200 alt="fitpath final screens">
-      <img src="images/fitpath/f_screens/fitpath_final_010.png" width=200 alt="fitpath final screens">
+          <div class="processdescription desc-intro">
+            <h6>Preference Testing & second round of testing</h6>
+            <h3>Do you prefer this or that?</h3>
+            <p>I went through a second round of testing, which both included preference testing and another clickable prototype. For Preference testing, I wanted to see where to include more branding colors on the application.</p>
 
-      <p>Following most of my steps from the User Personas, User Flows, to the Wireframes, then to the prototypes helped create a base formality of the application FitPath. Having a solid Style Guide helped to transform the screens into high fidelity
-        mockups.</p>
+            <p>From my 2nd clickable prototype testing, I ran three tests using Invision and Maze - two in person and one remote. Most users seemed to go through properly. Some users commented on the colors, but the biggest hurdle was finding the
+              aqua
+              “more” button on the bottom right-hand side of each card. Most users did not know exactly what the icon does, click it, or would be able to find it. Also, I found some of the secondary text was a little small or too light for them to
+              see,
+              sothat was enlarged.</p>
 
-        <p>What surprised me the most was the transition phase from wireframes to high fidelity screens. I needed time to sit back, envision, and then refine the screens. I learned that ensuring all elements were the same sizes and aligned throughout
-        the entire design helped make everything look much more polished.</p>
+            <a href="images/fitpath/preferencetesting2.jpg" target="_blank"><img src="images/fitpath/preferencetesting2.jpg" width=100% alt=""></a>
+            <p>Based on the feedback from these two tests, here’s what I changed on the design:</p>
+            <ul>
+              <li>
+                <p>• Added color to the navigation bars to empahsize which page they are on when selected</p>
+              </li>
+              <li>
+                <p>• Removed the “more” icon underneath each workout and added new buttons “Add” and “Share” to eliminate 1) ambiguity of the “more” icon and 2) an extra step/click for the user</p>
+              </li>
+              <li>
+                <p>• Enlarged some secondary text that was too small for readers, with maintaining heiarchy</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <p>If I was given more time, I would have made my prototype almost fully functional. Currently, not all screens are built out, but the functionality is there.</p>
 
-        <p>I hope you enjoyed this case study!</p>
-      <a class="button" href="project2.html">Go to next Case Study</a>
-      <a href="">
-        <h6>Back to Top</h6>
-      </a>
-    </section>
+      <section class="newsection container2" id="finaldesign">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/finishingtouches.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+              <h6>Final Design</h6>
+
+              <h3>The Finishing Touches</h3>
+              <p>With all the feedback from the users and lead designers, we then revised the finishing touches. The biggest patterns I learned from reiterations and feedback were three things:  </p>
+              <ol>
+                <li>
+                  <p>1. To maintain consistency is across each screen. This took a long time, with the number of screens I have.</p>
+                </li>
+                <li>
+                  <p>2. Change the behavior of an aqua “more button” on the bottom right of the workouts to to a readible “add” and “share” clickable icon on each workout card.</p>
+                </li>
+              </ol>
+              <p>This eliminated an extra menu, step, and thought process a user needed to go through.</p>
+              <img src="images/fitpath/finalscreens.jpg" width=1100 alt="">
+              <p>The fitness application helping people of all ages and experiences easily discover the perfect workouts that fit their needs and goals.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
   </div>
 
-  <!--
-      <section>
-      <img class="" src="images/"></img>
-      <h6></h6>
-      <h3></h3>
-      <p></p>
-      </section>
-  -->
+  <!-- BUTTON LINKS -->
+  <section>
+    <div class="centered-button">
+      <div class="project-button2">
+        <h1></h1>
+        <a class="buttonfixed" href="https://projects.invisionapp.com/share/UGVBV6KTHZF#/screens">View on InVision</a>
+      </div>
 
-  <footer>
-    <img src="images/logo/mn_logo.svg" width=65 alt="mn logo">
-    <a href="about.html">
-      <h6>about</h6>
+      <div class="project-button2">
+        <a class="buttonfixed" href="https://www.figma.com/file/b2IBxuO01vT8V1kotbwRt4/FitPath-High-Fidelity-Mockups-%26-Wireframes---Michelle-Ng?node-id=1768%3A17166">View on Figma</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="wrapperintro">
+        <div class="newsection largeheadline">
+          <h3>The Evolution of FitPath</h3>
+
+          <div class="space">
+            <a href="images/fitpath/fitpathevolution.png" target="_blank"><img src="images/fitpath/fitpathevolution.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container wrapperintro">
+          <div class="newsection largeheadline sectioncentered">
+
+            <h3>A Few of the Final Screens</h3>
+          </div>
+          <div class="space">
+            <img src="images/fitpath/f_screens/fitpath_final_001.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_002.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_003.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_004.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_005.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_006.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_007.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_008.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_009.png" width=200 alt="fitpath final screens">
+            <img src="images/fitpath/f_screens/fitpath_final_010.png" width=200 alt="fitpath final screens">
+          </div>
+
+          <div class="sectionmiddle closingparagraph">
+            <p>Following most of my steps from the User Personas, User Flows, to the Wireframes, then to the prototypes helped create a base formality of the application FitPath. Having a solid Style Guide helped transform the screens into high
+              fidelity mockups.</p>
+
+            <p>What surprised me the most was changing and removing the "more" icon that was placed on each of the workout cards. Not only was it hard for users to find and understand the functionality of the icon, removing it eliminated two extra
+              taps/clicks for our users.</p>
+
+            <p>Currently, not all screens are built out, but the functionality is there. If more time was alotted, the visual prototype would be fully functional.</p>
+
+            <p>Hope you enjoyed this case study!</p>
+          </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+
+    <div class="centered-button">
+      <div class="project-button">
+        <a class="button" href="project2.html">Go to next Case Study</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--BACK TO TOP LINK-->
+  <section class="backtotopcontainer">
+    <a class="gototop" href="#">
+      <h6>Back to Top</h6>
     </a>
-    <a href="portfolio.html">
-      <h6>portfolio</h6>
-    </a>
-    <a href="contact.html">
-      <h6>contact</h6>
-    </a>
-    <a href="https://linkedin.com/in/michellenng">
-      <img src="images/ico/Linkedin.svg" alt="Linkedin">
-    </a>
-    <a href="https://twitter.com/michellenng">
-      <img src="images/ico/twitter.svg" alt="Twitter">
-    </a>
-    <a href="https://instagram.com/michellenicoledesign">
-      <img src="images/ico/ig.svg" alt="Instagram">
-    </a>
-    <h6>© Michelle Nicole Ng 2020</h6>
-  </footer>
+  </section>
+
+
 </body>
+
+
+
+<footer>
+    <div class="footercontainer">
+      <div class="footerlogo">
+        <a href="index.html"><img src="images/logo/mn_logo.svg" width=65 alt="mn logo"></a>
+      </div>
+
+      <div class="footerlinks">
+        <a href="about.html">
+          <h6>about</h6>
+        </a>
+        <a href="portfolio.html">
+          <h6>portfolio</h6>
+        </a>
+        <a href="contact.html">
+          <h6>contact</h6>
+        </a>
+      </div>
+
+      <div class="sociallinks">
+        <a href="https://linkedin.com/in/michellenng">
+          <img src="images/ico/Linkedin.svg" alt="Linkedin">
+        </a>
+        <a href="https://twitter.com/michellenng">
+          <img src="images/ico/twitter.svg" alt="Twitter">
+        </a>
+        <a href="https://instagram.com/michellenicoledesign">
+          <img src="images/ico/ig.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="copywright">
+      <h6>© Michelle Nicole Ng 2020</h6>
+    </div>
+</footer>
 
 </html>
