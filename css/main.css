@@ -179,7 +179,7 @@ p {
 
 
 .sectioncentered {
-  width: 51%%;
+  width: 51%;
   flex-wrap: nowrap;
   justify-content: center;
   text-align: center;
@@ -368,6 +368,13 @@ input[type=submit] {
   text-transform: uppercase;
 }
 
+/* the container for the Contact Me button */
+.contactme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media screen and (max-width: 600px) {
   .containerform, input[type=submit] {
     width: 100%;
@@ -452,6 +459,194 @@ input[type=submit]:hover {
 /*! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
+
+
+
+.carousel {
+  background: #FAFAFA;
+  margin-bottom: 30px;
+  counter-reset: carousel-cell;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 160px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.flickity-enabled .carousel-cell { margin-bottom: 0; }
+
+.carousel-cell:before,
+.carousel-cell__number {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  content: counter(carousel-cell);
+  text-align: center;
+  line-height: 160px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel--not-counting .carousel-cell:before { content: none; }
+
+/* ---- carousel-image-cell ---- */
+/* frames single image in cell */
+
+.carousel-image-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #222;
+  /* center images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image-cell img {
+  display: block;
+  max-height: 100%;
+}
+
+.carousel-image-cell--wide {
+  width: 100%;
+}
+
+.carousel.is-fullscreen .carousel-image-cell {
+  background: transparent;
+}
+
+/* ---- carousel__natural-image ---- */
+/* use natural sizes for cell size */
+
+.carousel__natural-image {
+  display: block;
+  height: 200px;
+  min-width: 150px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+/* ---- style ---- */
+
+.carousel--full-width .carousel-cell {
+  width: 100%;
+}
+
+.carousel--half-width .carousel-cell {
+  width: 50%;
+}
+
+.carousel--various-widths .carousel-cell { width: 33%; }
+.carousel--various-widths .carousel-cell.size-180 { width: 180px; }
+.carousel--various-widths .carousel-cell.size-large { width: 75%; }
+
+.carousel--media-queried .carousel-cell {
+  width: 100%;
+}
+
+.carousel--selected-cell .carousel-cell.is-selected { background: #ED2; }
+
+.carousel--carousel-focus:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* ---- show-several ---- */
+
+.carousel--show-several .carousel-cell { width: 28%; }
+
+/* ---- cell-selector ---- */
+
+.carousel--cell-selector { position: relative; }
+
+/* ---- images-loaded ---- */
+
+.carousel--images-loaded-demo img {
+  display: block;
+  height: 160px;
+}
+
+.carousel--images-demo {
+  margin-bottom: 40px;
+}
+
+.carousel--images-demo img {
+  display: block;
+  height: 160px;
+}
+
+/* ---- carousel--pixel-position-demo ---- */
+
+.carousel--pixel-position-demo .carousel-cell { width: 300px; }
+
+/* ---- carousel--100-width-height ---- */
+
+.carousel--full-bleed { height: 100%; }
+
+.carousel--full-bleed .carousel-cell { height: 100%; }
+
+/* move page dots into carousel*/
+.carousel--full-bleed .flickity-page-dots { bottom: 10px; }
+
+/* ---- carousel--set-carousel-size-disabled ---- */
+
+.carousel--set-carousel-size-disabled { height: 160px; }
+.carousel--set-carousel-size-disabled .carousel-cell { height: 100%; }
+
+.carousel--set-carousel-size-disabled-percentage { padding-bottom: 50%; }
+.carousel--set-carousel-size-disabled-percentage .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+.carousel--set-carousel-size-disabled-percentage .carousel-cell { height: 100%; }
+
+/* ---- resize-option ---- */
+
+.carousel--resize-option {
+  width: 300px;
+}
+
+/* ---- adaptive-height ---- */
+
+.carousel-cell--adapt-height2 { height: 240px; }
+.carousel-cell--adapt-height3 { height: 320px; }
+
+.carousel--transition-adaptive-height .flickity-viewport {
+  transition: height 0.2s;
+}
+
+/* ---- bg-lazyload ---- */
+
+.carousel--bg-lazyload .carousel-cell {
+  background-size: cover;
+  background-position: center center;
+  height: 220px;
+}
+
+/* ---- bg-lazyload ---- */
+
+.carousel--fade {
+  background: #222;
+}
+
+/* ---- large device media query ---- */
+
+@media screen and ( min-width: 768px ) {
+
+  .carousel--media-queried .carousel-cell { width: 50%; }
+
+  .carousel--images-demo img {
+    height: 400px;
+  }
+}
+
+
 
 .flickity-enabled {
   position: relative;
