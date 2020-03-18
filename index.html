@@ -14,13 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
 
+  <!--TESTIMONIALS-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <!--Custom Styles-->
   <link rel="stylesheet" href="css/main.css">
-
-
-
-  <!--Javascript-->
-  <script src="/js/flickity.js"></script>
 
 
 </head>
@@ -39,10 +37,10 @@
     </ul>
   </nav>
 
-  <div class="container">
+  <div class="containerhero">
     <section class="box box1 intro">
       <h1 class="hero">Hi, I’m Michelle.
-        I’m a UX Designer
+        I’m a Product Designer
         in Los Angeles.
       </h1>
       <div class="space50">
@@ -58,15 +56,15 @@
 
     <!--main hero photo-->
     <div class="box box2 photo">
-      <img class="hero" src="images/home/michellenicole_homepage.jpg" alt="michelle nicole ng" width=100%>
+      <img class="hero" src="images/home/michellenicole_homepage.jpg" alt="michelle nicole ng">
     </div>
   </div>
 
-  <div class="arrowdown">
+  <div class="newsection arrowdown">
     <!--Icon to move below the fold-->
-    <a href="#projects"><img src="images/home/ArrowDown.png" alt=""></a>
+    <a href="#projects"><img class="animated tada infinite" src="images/home/ArrowDown.png" alt=""></a>
   </div>
-  </div>
+
 
   <!-- below the fold -->
 
@@ -80,39 +78,48 @@
     </section>
 
     <!--PROJECT PHOTOS-->
-    <section class="box box4 projpic">
-      <img src="images/home/FitPath_homepage.png" alt="FitPath" width=100%>
-    </section>
+    <div class="box box4 projpic">
+      <img src="images/home/FitPath_homepage.png" alt="FitPath">
+    </div>
   </div>
 
   <div class="container3">
 
     <h6>Testimonials</h6>
 
-    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+    <div class="main-carousel testimonials-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
 
-        <div class="carousel-cell">“Michelle was very professional and very enjoyable to work with. She was able to identify our pain points and ideated on how to resolve them. With her help, our conversion rates have increased by 80%. Thank you!”
-        </div>
-        <div class="carousel-cell">blablabla</div>
-        <div class="carousel-cell">more testimonials</div>
-        ...
+      <div class="carousel-cell testimonial">
+        <p>“Michelle was very professional and very enjoyable to work with. She was
+          able to
+          identify our pain points and ideated on how to resolve them. With her help, our conversion rates have increased
+          by 80%. Thank you!”</p>
+        <p><b>Trevor Weber</b>
+          UI/UX Designer</p>
       </div>
+      <div class="carousel-cell testimonial">
+        <p>Testinomial 2 goes here</p>
+      </div>
+      <div class="carousel-cell testimonial">
+        <p>Testimonial 3 goes here
+      </div>
+    </div>
 
+
+    <!--
       <section class="box box5 testimonials">
-
 
         <p>“Michelle was very professional and very enjoyable to work with. She was able to identify our pain points and ideated on how to resolve them. With her help, our conversion rates have increased by 80%. Thank you!”</p>
 
-        <img src="images/home/80px.png" alt="user">
-        <p><b>Trevor Weber</b>
-          UI/UX Designer</p>
+        <img src="images/home/80px.png" alt="user"> -->
 
-      </section>
-    </div>
 
-</body>
 
-</div>
+  </div>
+
+  <!--Javascript-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
 <footer class="footerwrapper">
   <div class="footercontainer">
@@ -124,7 +131,7 @@
       <a href="about.html">
         <h6>about</h6>
       </a>
-      <a href="portfolio.html">
+      <a href="project.html">
         <h6>portfolio</h6>
       </a>
       <a href="contact.html">
@@ -150,5 +157,6 @@
   </div>
 </footer>
 
+</body>
 
 </html>

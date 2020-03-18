@@ -24,7 +24,9 @@
   <nav class="nav-header">
     <div class="header">
       <a href="index.html"><img src="images/logo/mn_logo.svg" alt="" width=65 height=68></a>
-      <a href="index.html"><h1>Michelle Nicole Design</h1></a>
+      <a href="index.html">
+        <h1>Michelle Nicole Design</h1>
+      </a>
     </div>
     <ul class="nav-items">
       <li><a class="link" style="float:right" href="about.html">About</a></li>
@@ -40,41 +42,34 @@
       <h3>Let’s get in touch!</h3>
       <p>Feel free to fill out the form below or reach out to me directly at michellenicoledesign@gmail.com. <br>I look forward to hearing from you!</p>
 
-      <!--Insert Form-->
-      <div class="containerform">
-        <form action="action_page.php">
-
-          <label for="fname"></label>
-          <input type="text" id="fname" name="firstname" placeholder="Name">
-
-          <label for="lname">
-            <input type="text" id="lname" name="lastname" placeholder="Email"></label>
-
-          <label for="subject">
-          <input type="text" id="subject" name="subject" placeholder="Subject"></label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <div class="contactme">
-            <input type="submit" value="CONTACT ME">
-          </div>
-
-        </form>
-      </div>
+      <!--formspree form-->
+      <form action="https://formspree.io/mdodzpzn" method="POST">
+        <label>
+          <input type="text" name="name" placeholder="Name">
+        </label>
+        <label>
+          <input type="email" name="_replyto" placeholder="Email">
+        </label>
+        <label>
+          <textarea name="message" placeholder="Message"></textarea>
+        </label>
+        <div class="contactme">
+          <input type="submit" value="Send">
+        </div>
+      </form>
 
 
       <div class="newsection"></div>
+      <!--
+    <hr>
+    <div class="newsection"></div>
+    <h6>michellenicoledesign@gmail.com</h6>
 
-      <hr>
-      <div class="newsection"></div>
-      <h6>michellenicoledesign@gmail.com</h6>
-
-      <p>Los Angeles, CA</p>
+    <p>Los Angeles, CA</p> -->
 
     </div>
 
   </section>
-
-</body>
 
   <footer class="footerwrapper">
     <div class="footercontainer">
@@ -86,7 +81,7 @@
         <a href="about.html">
           <h6>about</h6>
         </a>
-        <a href="portfolio.html">
+        <a href="project.html">
           <h6>portfolio</h6>
         </a>
         <a href="contact.html">
@@ -110,4 +105,8 @@
     <div class="copywright">
       <h6>© Michelle Nicole Ng 2020</h6>
     </div>
-</footer>
+  </footer>
+
+</body>
+
+</html>
