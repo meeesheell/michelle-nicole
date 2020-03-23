@@ -7,8 +7,8 @@ html {
   font-size: 10px;
   font-family: 'IBM Plex Sans', "Lemon/Milk", 'Open Sans', sans-serif;
   line-height: 10px;
+  scroll-behavior: smooth;
 }
-
 
 @font-face {
   font-family: 'Lemon/Milk Regular';
@@ -17,26 +17,24 @@ html {
   src: local('Lemon/Milk Regular'), url('LemonMilk.woff') format('woff');
 }
 
-
 body {
   background-color: white;
 }
-
 
 /* TYPOGRAPHY STYLING*/
 h1 {
   font-family: "Lemon/Milk";
   font-size: 3.6rem;
-  font-weight: light;
+  font-weight: 300;
   letter-spacing: 10px;
   line-height: 6rem;
 }
 
-
 h2, h3, h4, h5, h6 {
-    font-family: "Open Sans";
-    font-weight: bold;
-  }
+  font-family: "Open Sans";
+  font-weight: bold;
+  /* aboutstyles.css is regular */
+}
 
 h2 {
   font-size: 4.8rem;
@@ -44,16 +42,32 @@ h2 {
   line-height: 0rem;
 }
 
-.project-header h2 {
-  line-height: 8rem;
+/*aboutstyles.css
+
+h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    font-weight: regular;
+  }
+
+*/
+.ab h2 {
+  line-height: 10rem;
+}
+
+.ab h3 {
+  line-height: 5rem;
+  font-weight: 500;
 }
 
 h3 {
-    font-size: 3.6rem;
-  }
+  font-size: 3.6rem;
+}
 
 h4 {
   font-size: 2.4rem;
+}
+
+.ab h4 {
   line-height: 5rem;
 }
 
@@ -62,13 +76,19 @@ h5 {
   line-height: 3rem;
 }
 
+/*
+.ab h5 {
+  line-height: 0rem;
+}
+*/
+
+
 h6 {
   color: #955BA7;
   font-size: 1.6rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
-/*  margin: 30px 0px; */
 }
 
 p {
@@ -80,201 +100,336 @@ p {
   /* font-weight: regular; */
   letter-spacing: -.01rem;
   line-height: 3.5rem;
-  /*margin: 50px 0px;*/
-  }
-
-  /* WRAPPERS */
-
-  .wrapper {
-    width: 100%;
-  }
-
-  /* WRAPPER 2 FOR PERSONAS ONLY */
-  .wrapper2 {
-    width: 90%;
-    padding-left: 10%;
-  }
-
-  .wrapperintro {
-    width: 70%;
-  }
-
-/* FOR ROLES/DESIGN DELIVERABLES */
-.designspecs a{
-  text-decoration: none;
+  /*margin: 50px 0px;  main.css includes this*/
 }
 
+.about p {
+  line-height: 4rem;
+  margin-bottom: 5rem;
+}
 
-/* STYLING FOR USER PERSONAS AND COMPETITIVE ANALYSIS */
-.details h5 {
-  padding-top: 3rem;
+.aboutbuttonsection {
+  padding: 10% 0% 60% 10%;
+}
+
+.aboutcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 3%;
+}
+
+.aboutcontainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  /*previous version is 100% */
+  padding-top: 0%;
+}
+
+.aboutcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0rem;
+  justify-content: center;
+  width: 100%;
   text-align: center;
 }
 
-.details p {
-  line-height: 3.0rem;
-  padding-top: 2rem;
-  padding-bottom: .5rem;
+/* CONTAINERS FOR THE PHOTOS ON ABOUT PAGE */
+.aboutcontainerphotos {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%
 }
 
-.details img {
+/* TARGETING EACH PHOTO */
+.aboutcontainerphotos img {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.aboutleftcolumn {
+  display: flex;
+  flex: 1;
   align-items: center;
+}
+
+.aboutmiddlecolumn {
+  display: flex;
+  flex: 3;
+}
+
+.aboutmiddleflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutphotoleft img {
+  max-width: 100%;
+}
+
+.aboutphotoright img {
+  max-width: 100%;
+}
+
+.aboutphotorow1 {
+  display: flex;
+  flex: auto;
+  align-items: flex-end;
+}
+
+.aboutphotorow2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutrightcolumn {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.aboutrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutcolumn1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 2% 3%;
+}
+
+.arrowdown {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.arrowdown img {
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* BACK TO TOP LINK */
+.backtotopcontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  scroll-behavior: smooth;
+  width: 85%;
+}
+
+.backtotopcontainer a {
+  text-decoration: none;
 }
 
 .bigpiclink {
   font-size: 0;
   text-align: center;
-  width: 100%;  /* Container's dimensions */
+  width: 100%;
+  /* Container's dimensions */
   height: 100%;
 }
 
-img {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-
-.space {
-  padding-top: 4rem;
-}
-
-
-/* FOR THE COLUMN/ROWS */
-
-.column p {
-  font-size: 1.6rem;
-  spacing: 0px;
-  line-height: -4em;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-
-
-.columncenter li {
-  font-size: 1.6rem;
-  spacing: 0px;
-  line-height: -4em;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  scroll-behavior: smooth;
-}
-
-/* FOR COMPETITIVE ANALYSIS */
-.details {
-  width: 80%;
-}
-
-.rowdetails h4 {
-  margin-bottom: 4rem;
-  scroll-behavior: smooth;
-}
-
-.subcategory {
-  font-weight: 700;
-  padding-top: 3rem;
-
-}
-
-.subcategory p {
-  font-weight:700;
-  /*background-color: red; */
-  margin-top: 1.5rem;
-}
-
-
-
-/* FOR THE NAVIGATION */
-
-.nav-header {
+/* FOR THE HERO SECTION */
+.box1 {
   align-items: center;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding-top: 1%;
+  padding-right: 8%;
+  /*margin: 0% 5%;*/
+  width: 40%;
+  height: 30%;
 }
 
-.nav-header a {
-  color: #616161;
-  text-decoration: none;
+/* FOR THE HERO PHOTO */
+.box2 {
+  width: 40%;
+  height: 30%;
 }
 
-
-.nav-header h1 {
+/* FOR HOMEPAGE - PROJECT FITPATH*/
+.box3 {
+  padding: 3% 14%;
+  width: 60%;
 }
 
-.header {
-  display: flex;
-  flex: 1;
-}
-
-.header img {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  size: 100%;
-}
-
-.header h1 {
-  font-size: 2.4rem;
-  margin: 0rem;
-}
-
-.nav-items li {
-  display: inline-flex;
-  color: #141414;
-  font-family: "Open Sans";
-  text-decoration: none;
-  font-weight: bold;
-  padding-left: 0rem;
-  padding-right: 4rem;
-}
-
-
-.nav-header .link {
-  color: #955BA7;  /* purple */
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-
-/* NAVIGATION CONTACT BUTTON */
-.nav-header .contact {
-  color: #000;
-}
-
-.nav-items .button {
-letter-spacing: .1rem;
-color: white;
-padding: 8px 20px;
-}
-
-
-/* FOR THE TOP HEADER*/
-
-.project-hero {
-  position: relative;
-  text-align: left;
-}
-
-.project-hero img {
-  width: 100%;
-}
-
-.project-header {
-  position: absolute;
-  top: 2%;
-  padding-left: 10%;
+.box4 {
   width: 40%;
 }
 
+/* FOR HOMPEAGE TESTIMONIALS */
+.box5 {
+  width: 100%;
+}
 
+/* ALL BUTTONS */
+.button {
+  background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button2 {
+  background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  width: 60%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.buttonbody {
+  background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  width: 65%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.buttonfixed {
+  background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  min-width: 30rem;
+  letter-spacing: 0.1rem;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.closingparagraph p {
+  flex-wrap: nowrap;
+  font-size: 2.4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.column p {
+  font-size: 1.6rem;
+  line-height: -4em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* FOR THE 3 COLUMN MIND MAPPING SKETCHING*/
+.column-three h4 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.column-three p {
+  line-height: 3rem;
+  padding: 0;
+  text-align: left;
+}
+
+.column4 {
+  text-align: center;
+  margin: 0em;
+  flex: 1 1 auto;
+  width: 25%;
+}
+
+.columncenter {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.columncenter img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOR THE COLUMN/ROWS */
+.columncenter li {
+  font-size: 1.6rem;
+  line-height: -4em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  scroll-behavior: smooth;
+}
+
+.contactsectioncentered {
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 3%;
+  padding-top: 10rem;
+  /* changed from 3rem */
   width: 90%;
 }
 
@@ -293,78 +448,299 @@ padding: 8px 20px;
   width: 60%;
 }
 
-.wireframephotos {
+/* CONTAINERS FOR CONTACT PAGE*/
+.containercontact {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+
+.containercontact p {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.containerform {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* FOR THE HOME HERO SECTION*/
+.containerhero {
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 3%;
+}
+
+.containerhero p {
+  padding: 50px 0px;
+}
+
+.copywright {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+/* SPACING FOR ALL THE INTRO DESCRIPTION HEADINGS */
+.desc-intro h3 {
+  padding-bottom: .5rem;
+}
+
+.desc-intro h5 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.desc-intro h6 {
+  padding-bottom: 2rem;
+}
+
+.desc-intro p {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.description {
+  display: flex;
+  width: 70%;
+}
+
+/* FOR ROLES/DESIGN DELIVERABLES */
+.designspecs a {
+  text-decoration: none;
+}
+
+/* FOR COMPETITIVE ANALYSIS */
+.details {
+  width: 80%;
+}
+
+/* STYLING FOR USER PERSONAS AND COMPETITIVE ANALYSIS */
+.details h5 {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.details img {
+  align-items: center;
+}
+
+.details p {
+  line-height: 3.0rem;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+}
+
+.evolution h3 {
+  text-align: center;
+}
+
+/* FOR THE FOOTER */
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.footerlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerlinks a {
+  padding: 2.5rem;
+  text-decoration: none;
+}
+
+.footerlogo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  margin: 0rem;
+}
+
+.header img {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  size: 100%;
+}
+
+.icon2 {
+  display: block;
+  justify-content: center;
+  width: 10%;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* CONTACT FORM */
+input[type="text"],
+select,
+textarea {
+  background-color: #f3f3f3;
+  border: 0px solid #f3f3f3;
+  /* Gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #616161;
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: -0.01rem;
+  line-height: 3.5rem;
+  margin-top: 6px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 34.25%;
+}
+
+input[type="email"],
+select,
+textarea {
+  background-color: #f3f3f3;
+  border: 0px solid #f3f3f3;
+  /* Gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #616161;
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: -0.01rem;
+  line-height: 3.5rem;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 12px;
+  width: 34.25%;
+}
+
+input[type="message"],
+select,
+textarea {
+  background-color: #f3f3f3;
+  border: 0px solid #f3f3f3;
+  /* Gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #616161;
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: -0.01rem;
+  line-height: 2.4rem;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  padding: 12px;
+  width: 70%;
+  height: 20rem;
+}
+
+input[type="submit"] {
+  align-items: center;
+  background-image: linear-gradient(63deg,
+      rgba(242, 168, 168, 1) 1.9%,
+      rgba(94, 46, 165, 1) 90.1%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-face: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* the container for the Contact Me button */
+.contactme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  .containerform,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+/* CONTAINERS FOR HOMEPAGE */
+.homecontainer {
+  /*changed on css but not index.hmtl */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 100vh;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 3%;
+}
+
+.homecontainer2 {
+  display: flex;
+  flex-wrap: row wrap;
+  background-color: white;
+  padding-top: 20rem;
+  height: 100vh;
   width: 100%;
 }
 
-/* FOR THE 3 COLUMN ROW */
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.homecontainer3 {
+  background-color: white;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 3%;
+  justify-content: flex-start;
 }
-
-.columncenter {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-
-/* NEED ASSISTANCE ON CENTERING LOGOS */
-.columncenter img {
-  max-width: 100%;
-  height: auto;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-/* MIGHT NEED TO EDIT
-.row2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-*/
-
-/* FOR THE 4 COLUMN ROW */
-
-.row4 {
-  padding:0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.column4 {
-  text-align: center;
-  margin: 0em;
-  flex: 1 1 auto;
-  width: 25%;
-}
-
 
 /* FOR A NEW CATEGORY */
-
 .largeheadline {
   align-items: center;
   padding-top: 10rem;
@@ -378,26 +754,174 @@ padding: 8px 20px;
   justify-content: center;
 }
 
-/* FOR THE SECTIONS WITH ICON2 AND DESCRIPTION */
-
-.sectionwrapper {
+/* FOR THE NAVIGATION */
+.nav-header {
+  align-items: center;
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 1%;
+}
+
+.nav-header a {
+  color: #141414;
+  text-decoration: none;
+}
+
+/* NAVIGATION CONTACT BUTTON */
+.nav-header .contact {
+  color: #000;
+}
+
+.nav-header .link {
+  color: #955BA7;
+  /* purple */
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.nav-items .button {
+  letter-spacing: 0.1rem;
+  color: white;
+  padding: 8px 20px;
+}
+
+.nav-items li {
+  display: inline-flex;
+  color: #141414;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 0rem;
+  padding-right: 4rem;
+}
+
+.nav-items ul {
+  flex-wrap: wrap;
+}
+
+/* FOR SPACING */
+.newsection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+.padding {
+  padding-right: 20%;
+}
+
+.photo {
+  display: flex;
+  align-content: space-around;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.preftestingimg {
+  width: 100%;
+}
+
+.processdescription {
+  display: inline;
+  justify-content: center;
+  width: 70%;
+}
+
+/* FOR A CENTERED BUTTON */
+.project-button {
+  height: 10rem;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+/* FOR CENTERED BUTTONS AT END */
+.project-button2 {
+  height: 8rem;
+  justify-content: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+.project-header {
+  position: absolute;
+  top: 2%;
+  padding-left: 10%;
+  width: 40%;
+}
+
+.project-header h2 {
+  line-height: 8rem;
+}
+
+/* FOR THE TOP HEADER FOR PROJECT PAGES */
+.project-hero {
+  position: relative;
+  text-align: left;
+}
+
+.project-hero img {
+  width: 100%;
+}
+
+/*FOR SPACING */
+.projectnewsection {
+  padding-top: 10rem;
+}
+
+/* FOR HOMEPAGE */
+.projects h2 {
+  /*
+  line-height: 10rem; */
+}
+
+.projects p {
+  margin: 50px 0;
+}
+
+.projectsectioncentered {
+  width: 51%;
   flex-wrap: nowrap;
   justify-content: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* FOR FITPATH PHOTOS*/
+.projpic img {
   width: 100%;
 }
 
-.sectionwrapperleft {
+.row {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: left;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.row4 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.rowdetails h4 {
+  margin-bottom: 4rem;
+  scroll-behavior: smooth;
+}
+
+/* check into this */
 .sectioncentered {
   width: 51%;
   flex-wrap: nowrap;
@@ -422,10 +946,33 @@ padding: 8px 20px;
   text-align: center;
 }
 
-.textaligncenter {
-  text-align: center;
+/* FOR THE SECTIONS WITH ICON2 AND DESCRIPTION */
+.sectionwrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 100%;
 }
 
+.sectionwrapperleft {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.scroll {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+}
 
 .sectionmiddle {
   width: 50%;
@@ -434,208 +981,11 @@ padding: 8px 20px;
   text-align: left;
 }
 
-.icon2 {
-  display: block;
-  justify-content: center;
-  width: 10%;
-}
-
-
-.processdescription {
-  display: inline;
-  justify-content: center;
+.smallerwidth {
   width: 70%;
 }
 
-.evolution h3 {
-  text-align: center;
-}
-
-
-
-.preftestingimg {
-  width: 100%;
-}
-
-.closingparagraph p {
-  flex-wrap: nowrap;
-  font-size: 2.4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width:100%;
-}
-
-
-/* SPACING FOR ALL THE INTRO DESCRIPTION HEADINGS */
-.desc-intro h3 {
-  padding-bottom: .5rem;
-}
-
-.desc-intro h5 {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-.desc-intro h6 {
-  padding-bottom: 2rem;
-}
-
-
-.desc-intro p {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-
-/* FOR THE 3 COLUMN MIND MAPPING SKETCHING*/
-.column-three h4 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-
-.column-three p {
-  line-height: 3rem;
-  padding: 0;
-  text-align: left;
-}
-
-
-.padding {
-  padding-right: 20%;
-}
-
-/* FLEXBOX SIZING */
-
-.summary {
-  display: flex;
-  padding-top: 10rem;
-}
-
-.newsection {
-  padding-top: 10rem;
-}
-
-.title {
-  display: flex;
-  width: 30%;
-}
-
-.description {
-  display: flex;
-  width:70%;
-}
-
-
-
-
-@media screen and (min-width: 110em) {
-
-}
-
-  /* ALL BUTTONS */
-.button {
-  background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 1.9%, rgba(94,46,165,1) 90.1% );
-  border: none;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  /*font-face: "Open Sans"; */
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.buttonfixed {
-  background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 1.9%, rgba(94,46,165,1) 90.1% );
-  border: none;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  /*font-face: "Open Sans"; */
-  font-size: 1.4rem;
-  font-weight: 600;
-  min-width: 30rem;
-  letter-spacing: 0.1rem;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* FOR A CENTERED BUTTON */
-
-.project-button {
-  height: 10rem;
-  justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 0rem;
-  text-align: center;
-}
-
-/* FOR CENTERED BUTTONS AT END */
-
-.project-button2 {
-  height: 8rem;
-  justify-content: center;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  text-align: center;
-}
-
-/* BACK TO TOP LINK */
-.backtotopcontainer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:  flex-end;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  scroll-behavior: smooth;
-  width: 85%;
-}
-
-.backtotopcontainer a {
-  text-decoration: none;
-}
-
-
-
-
-
-/* FOR THE FOOTER */
-.footercontainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-}
-
-.footerlogo {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-}
-
-.footerlinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footerlinks a {
-  padding: 2.5rem;
-  text-decoration: none;
-}
-
+/* IN THE FOOTER*/
 .sociallinks {
   display: flex;
   flex-wrap: wrap;
@@ -644,12 +994,169 @@ padding: 8px 20px;
   width: 200px;
 }
 
-
 .sociallinks img {
   padding: 10px;
 }
 
-.copywright {
-  text-align: center;
-  padding-bottom: 2%;
+.sociallinksnone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 200px;
 }
+
+.space {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.space50 {
+  padding-top: 50px;
+}
+
+.subcategory {
+  font-weight: 700;
+  padding-top: 3rem;
+}
+
+.subcategory p {
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.summary {
+  display: flex;
+  padding-top: 10rem;
+}
+
+.textaligncenter {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  width: 30%;
+}
+
+.wireframephotos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* WRAPPERS */
+.wrapper {
+  width: 100%;
+}
+
+/* WRAPPER 2 FOR PERSONAS ONLY */
+.wrapper2 {
+  width: 90%;
+  padding-left: 10%;
+}
+
+.wrapperintro {
+  width: 70%;
+}
+
+/*! Flickity v2.2.1
+https://flickity.metafizzy.co
+---------------------------------------------- */
+.main-carousel {
+  background: #FFF;
+  height: 260px;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  counter-reset: carousel-cell;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 260px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  padding: 0 8%;
+  background: #FFF;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  font-size: 2.4rem;
+}
+
+/* ---- cell-selector ---- */
+.carousel--cell-selector {
+  position: relative;
+}
+
+/* ---- carousel--pixel-position-demo ---- */
+.carousel--pixel-position-demo .carousel-cell {
+  width: 300px;
+}
+
+/* ---- bg-lazyload ---- */
+.carousel--fade {
+  background: #222;
+}
+
+/* ---- large device media query ---- */
+@media screen and (min-width: 768px) {
+  .carousel--media-queried .carousel-cell {
+    width: 50%;
+  }
+
+  .testimonials-carousel {
+    text-align: center;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .flickity-button, .flickity-button, .flickity-prev-next-button next {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .flickity-button-icon {
+    color: #B9B9B9;
+    border: none;
+  }
+
+  .flickity-page-dots .dot {
+    background-color: #DEDEDE;
+    opacity: 1;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background-image: linear-gradient(63deg,
+        rgba(242, 168, 168, 1) 1.9%,
+        rgba(94, 46, 165, 1) 90.1%);
+  }
+
+  /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on March 17, 2020 */
+  @font-face {
+    font-family: "lemon_milkbold";
+    src: url("lemonmilk-bold-webfont.woff2") format("woff2"),
+      url("lemonmilk-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "lemon_milklight";
+    src: url("lemonmilk-light-webfont.woff2") format("woff2"),
+      url("lemonmilk-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "lemon_milkregular";
+    src: url("lemonmilk-regular-webfont.woff2") format("woff2"),
+      url("lemonmilk-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @media screen and (max-height: 1200px) {}
