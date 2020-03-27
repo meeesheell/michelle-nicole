@@ -17,6 +17,13 @@ html {
   src: local('Lemon/Milk Regular'), url('LemonMilk.woff') format('woff');
 }
 
+@font-face {
+font-family: 'Lemon/Milk light Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Lemon/Milk light Regular'), url('LemonMilklight.woff') format('woff');
+}
+
 body {
   background-color: white;
 }
@@ -24,22 +31,39 @@ body {
 /* TYPOGRAPHY STYLING*/
 /* for mobile */
 h1 {
-  font-family: "Lemon/Milk";
+  font-family: 'Lemon/Milk light Regular';
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 900;
   letter-spacing: 10px;
   line-height: 6rem;
 }
 
+.header h1 {
+    font-family: 'Lemon/Milk light Regular';
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    line-height: 6rem;
+  }
+}
 
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 2.8rem;
   }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
 }
+
 
 @media screen and (min-width: 700px) {
   h1 {
+    font-size: 3.4rem;
+  }
+
+  .header h1 {
     font-size: 3.4rem;
   }
 }
@@ -49,7 +73,14 @@ h1 {
     font-size: 2.0rem;
     line-height: 4rem;
   }
+
+  .header h1 {
+    font-size: 2.0rem;
+    line-height: 4rem;
+  }
 }
+
+
 
 /* laptops */
 @media screen and (min-width: 991px) {
@@ -81,17 +112,13 @@ h1 {
 }
 
 
-
-@media screen (min-width: 991px) /*laptops*/ {
-
-}
-
 @media screen (min-width: 575px) /*smartphones*/ {
   h1 {
     font-size: 2.0rem;
     line-height: 4rem;
   }
 }
+
 
 h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
@@ -102,7 +129,6 @@ h2, h3, h4, h5, h6 {
 h2 {
   font-size: 4.2rem;
   padding-top: 6rem;
-  line-height: 0rem;
 }
 
 @media screen and (min-width 900px) {
@@ -112,6 +138,8 @@ h2 {
     line-height: 0rem;
   }
 }
+
+
 
 /*aboutstyles.css
 
@@ -125,14 +153,33 @@ h2, h3, h4, h5, h6 {
   line-height: 10rem;
 }
 
-.ab h3 {
-  line-height: 5rem;
-  font-weight: 500;
-}
-
 h3 {
   font-size: 3.6rem;
 }
+
+.ab h3 {
+  line-height: 5rem;
+  font-weight: 500; /* check into why I made this weight 500 */
+}
+
+@media screen and (max-width: 1200px) {
+  .ab h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ab h3 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ab h3 {
+    font-size: 2.4rem;
+  }
+}
+
 
 h4 {
   font-size: 2.4rem;
@@ -179,7 +226,7 @@ p {
 
 @media screen and (min-width: 900px) /*laptops*/ {
   p {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
   }
 }
 
@@ -198,11 +245,71 @@ p {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 900px) {
+  .about p {
+    margin-bottom: 4rem;
+  }
+}
+
+.aboutbutton {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutbutton {
+    padding-top: 2rem;
+  }
+}
+
+
 .aboutbuttonsection {
   padding: 10% 0% 60% 10%;
 }
 
+@media screen and (max-width: 1200px) {
+  .aboutbuttonsection {
+    padding: 5% 0% 60% 0%;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
+@media screen and (max-width: 991px) {
+  .aboutbuttonsection {
+    padding: 5% 0% 00% 0%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .getintouch {
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .getintouch {
+    padding-bottom: 8rem;
+  }
+}
+
+
+.aboutcolumn1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 2% 3%;
+}
+
+@media screen and (max-width: 991px) {
+  .aboutcolumn1 {
+    padding: 2% 0%;
+  }
+}
 
 .aboutcontainer {
   display: flex;
@@ -211,6 +318,12 @@ p {
   margin: 0 auto;
   width: 80%;
   padding-top: 3%;
+}
+
+@media screen and (max-width: 1250px) { /* laptop screen */
+  .aboutcontainer {
+    width: 90%;
+  }
 }
 
 .aboutcontainer1 {
@@ -222,6 +335,56 @@ p {
   /*previous version is 100% */
   padding-top: 0%;
 }
+
+@media screen and (max-width: 991px) { /* laptop screen */
+  .aboutcontainer1 {
+    flex-wrap: nowrap;
+    width: 90%;
+  }
+
+
+  .aboutcontainer1 .newsection {
+    padding-top: 5rem;
+  }
+}
+
+.aboutcontainer1 h1 {
+    font-size: 3.8rem;
+    line-height: 6rem;
+    letter-spacing: 10px;
+}
+
+
+@media screen and (max-width: 991px) { /* laptop screen */
+  .aboutcontainer1 h1 {
+      font-size: 3.6rem;
+      letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutcontainer1 h1 {
+    font-size: 3.2rem;
+    line-height: 5.5rem;
+    letter-spacing: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutcontainer1 h1 {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    letter-spacing: 5px;
+  }
+}
+
+
+
+
+
+
+
+
 
 .aboutcontainer2 {
   display: flex;
@@ -287,6 +450,24 @@ p {
   align-items: flex-start;
 }
 
+.about-disp-quote {
+  margin-bottom: 40px;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .about-rm-media {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .about-disp-quote {
+    display: none;
+  }
+}
+
 .aboutrightcolumn {
   display: flex;
   flex: 1;
@@ -301,14 +482,12 @@ p {
   width: 100%;
 }
 
-.aboutcolumn1 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  justify-content: flex-start;
-  padding: 2% 3%;
+@media screen and (max-width: 991px) {
+  .aboutrow {
+    display: block;
+  }
 }
+
 
 .arrowdown {
   align-items: center;
@@ -338,6 +517,27 @@ p {
   width: 85%;
 }
 
+@media screen and (max-width: 850px) {
+  .backtotopcontainer {
+    justify-content: center;
+    padding-bottom: 15rem;
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .backtotopcontainer {
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .backtotopcontainer {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+}
+
 .backtotopcontainer a {
   text-decoration: none;
 }
@@ -348,6 +548,12 @@ p {
   width: 100%;
   /* Container's dimensions */
   height: 100%;
+}
+
+@media screen and (min-width: 100px) {
+  .bigpiclink img {
+    width: 100%;
+  }
 }
 
 /* FOR THE HERO SECTION */
@@ -387,7 +593,6 @@ p {
   .mobilescreen {
     display: none;
   }
-
 }
 
 
@@ -397,15 +602,27 @@ p {
   width: 100%;
 }
 
-.box4 {
-  display: none;
+@media screen and (max-width: 900px) {
+  .box3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .box3 {
+    padding-top: 4rem;
+  }
 }
 
-.homerightalign {
-  background-color: blue;
-  align-content: flex-end;
-  justify-content: space-between;
-  text-align: right;
+
+
+
+
+@media screen and (max-width: 900px) {
+  .homerightalign {
+    align-content: flex-end;
+    justify-content: space-between;
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -414,18 +631,24 @@ p {
     width: 60%;
   }
 
-  .box4 {
-    display: flex;
-    width: 40%;
-  }
 
-  .box4 img {
-    align-content: flex-end;
-    justify-content: flex-end;
-  }
 }
 
+.box4 {
+  display: flex;
+  width: 40%;
+}
 
+.box4 img {
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+  .box4 {
+    display: none;
+  }
+}
 
 /* FOR HOMPEAGE TESTIMONIALS */
 .box5 {
@@ -481,6 +704,46 @@ p {
   text-transform: uppercase;
 }
 
+
+@media screen and (max-width: 991px) {
+  .buttonbody {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .buttonbody {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buttonbody {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .buttonbody {
+    padding: 15px 20px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .buttonbody {
+    font-size: 1.4rem;
+    padding: 15px 10px;
+    width: 60%;
+  }
+}
+
+
+
+
+
+
+
 .buttonfixed {
   background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
   border: none;
@@ -497,6 +760,8 @@ p {
   text-transform: uppercase;
 }
 
+
+
 .centered {
   justify-content: center;
 }
@@ -508,9 +773,16 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
-  .centeredmobile {
-    text-align: left;
+.centeredmobilebutton {
+  display: block;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .centeredmobilebutton {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -531,10 +803,18 @@ p {
 
 .column p {
   font-size: 1.6rem;
-  line-height: 0em;
+  line-height: 3rem;
   margin-top: -1rem;
   margin-bottom: -1rem;
 }
+
+@media screen and (max-width: 750px) {
+  .column p {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: )
 
 /* FOR THE 3 COLUMN MIND MAPPING SKETCHING*/
 .column-three h4 {
@@ -555,6 +835,13 @@ p {
   width: 25%;
 }
 
+@media screen and (max-width: 650px) {
+  .column4 {
+    padding: 2.5rem;
+    width: 100%;
+  }
+}
+
 .columncenter {
   display: flex;
   flex-direction: column;
@@ -565,9 +852,56 @@ p {
   padding-right: 2rem;
 }
 
+@media screen and (max-width: 991px) {
+  .columncenter {
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .columncenter {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  .columncenter .logo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .columncenter {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+
 .columncenter img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .columncenter img {
+    padding-top: 5rem;
+  }
+}
+
+/* resizing the h4 for the top of the project area */
+@media screen and (max-width: 991px) {
+  .columncenter h4 {
+    font-size: 2.0rem;
+  }
 }
 
 /* FOR THE COLUMN/ROWS */
@@ -578,6 +912,41 @@ p {
   margin-bottom: -1rem;
   scroll-behavior: smooth;
 }
+
+/*CENTERING IMAGES COMPETITIVE ANALYSIS USER PERSONAS */
+@media screen and (max-width: 650px) {
+  .competitiveanalysis img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .userpersonas img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .competitiveanalysis img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .userpersonas img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+
 
 .contactsectioncentered {
   flex-wrap: nowrap;
@@ -594,6 +963,19 @@ p {
   padding-top: 10rem;
   /* changed from 3rem */
   width: 90%;
+}
+
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding-top: 0rem;
+  }
 }
 
 .container2 {
@@ -705,6 +1087,12 @@ p {
   width: 70%;
 }
 
+@media screen and (max-width: 650px) {
+  .description {
+    width: 100%;
+  }
+}
+
 /* FOR ROLES/DESIGN DELIVERABLES */
 .designspecs a {
   text-decoration: none;
@@ -713,6 +1101,12 @@ p {
 /* FOR COMPETITIVE ANALYSIS */
 .details {
   width: 80%;
+}
+
+@media screen and (max-width: 650px) {
+  .details {
+    width: 100%;
+  }
 }
 
 /* STYLING FOR USER PERSONAS AND COMPETITIVE ANALYSIS */
@@ -783,6 +1177,14 @@ p {
   padding: 2.5rem;
   text-decoration: none;
 }
+
+/* for any media under 650px */
+@media screen and (max-width: 650px) {
+  .footerlinks h6 {
+    line-height: 5rem;
+  }
+}
+
 
 .footerlogo {
   display: inline;
@@ -860,11 +1262,52 @@ p {
   width: 10%;
 }
 
+@media screen and (max width: 600px) {
+  .icon2 {
+    width: 60%;
+  }
+}
+
+/*
+@media screen and (max-width: 650px) {
+  .icon2 {
+    display: block;
+  }
+
+  .icon2 img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}*/
+
+img .icon2 {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+
+
 img {
   display: inline-block;
   vertical-align: middle;
   max-height: 100%;
-  max-width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homescreen img {
+    max-width: 100%;
+  }
+
 }
 
 /* CONTACT FORM */
@@ -985,22 +1428,21 @@ input[type="submit"]:hover {
   padding-top: 3%;
 }
 
+
 .homecontainer2 {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  justify-content: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 @media screen and (max-width: 575px) {
   .containerhero {
     display: block;
     flex-wrap: nowrap;
-    width: 90%;
   }
 }
 
@@ -1008,19 +1450,37 @@ input[type="submit"]:hover {
   .homecontainer2 {
     padding-top: 20rem;
     height: 100vh;
-    width: 100%;
   }
 }
 
 
 
 .homecontainer3 {
-  background-color: white;
-  margin: 0 auto;
-  width: 70%;
-  padding-top: 3%;
+  align-items: center;
+  height: 100%;
   justify-content: flex-start;
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 70%;
 }
+
+@media screen and (max-width: 900px) {
+  .homecontainer3 {
+    width: 90%;
+  }
+
+  .homecontainer3 p {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .homecontainer3 {
+    width: 95%;
+  }
+}
+
 
 /* FOR A NEW CATEGORY */
 .largeheadline {
@@ -1093,6 +1553,15 @@ input[type="submit"]:hover {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 400px) {
+  .nav-items .aboutpg {
+    display: none;
+  }
+  .nav-items .projectpg {
+    display: none;
+  }
+}
+
 /* FOR SPACING */
 .newsection {
   display: flex;
@@ -1100,8 +1569,39 @@ input[type="submit"]:hover {
   padding-top: 10rem;
 }
 
+@media screen and (max-width: 991px) {
+  .newsection {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .newsection {
+    padding-top: 5rem;
+  }
+}
+
+.newsectionab {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+@media screen and (max-width: 991px) {
+  .newsectionab {
+    padding-top: 0rem;
+  }
+}
+
+
 .padding {
   padding-right: 20%;
+}
+
+@media screen and (max-width: 991px) {
+  .padding {
+    padding-right: 0%;
+  }
 }
 
 .photo {
@@ -1132,6 +1632,25 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  .proj-button a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+  }
+  .proj-button-rm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .proj-button a {
+    display: ;
+  }
+}
+
+
 /* FOR CENTERED BUTTONS AT END */
 .project-button2 {
   height: 8rem;
@@ -1141,6 +1660,8 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+
+
 .project-header {
   position: absolute;
   top: 2%;
@@ -1148,14 +1669,88 @@ input[type="submit"]:hover {
   width: 40%;
 }
 
+@media screen and (max-width: 991px) {
+  .project-header {
+    top: 0%;
+    padding-left: 5%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .project-header {
+    position: relative;
+    padding: 3% 20% 0% 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .project-header {
+    padding: 3% 10% 0% 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project-header {
+    padding: 3% 8% 0% 8%;
+  }
+}
+
 .project-header h2 {
   line-height: 8rem;
+}
+
+@media screen and (max-width: 991px) {
+  .project-header h2 {
+    line-height: 8rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .project-header h2 {
+    line-height: 7rem;
+    padding-top: .5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-header h2 {
+    font-size: 3.2rem;
+    line-height: 7rem;
+    padding-top: .5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-header p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .project-header p {
+    font-size: 2.0rem;
+    line-height: 3.2rem;
+  }
 }
 
 /* FOR THE TOP HEADER FOR PROJECT PAGES */
 .project-hero {
   position: relative;
   text-align: left;
+}
+
+@media screen and (max-width: 615px) {
+  .project-hero {
+    display: inline-block;
+    justify-content: center;
+  }
 }
 
 .project-hero img {
@@ -1197,15 +1792,65 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
+@media screen and (max-width: 650px) {
+  .row {
+    display: inline;
+  }
+}
+
+
+
+/*for mind mapping & sketching for FitPath */
+.row3 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 991px) {
+  .row3 {
+    display: flex;
+  }
+}
+
+.row3logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+  .row3logo {
+
+  }
+}
+
+
+
 .row4 {
+  display: flex;
   padding: 0;
   margin: 0;
   justify-content: space-around;
 }
 
+@media screen and (max-width: 650px) {
+  .row4 {
+    display: block;
+  }
+}
+
+/* for the project top details */
 .rowdetails h4 {
   margin-bottom: 4rem;
   scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 650px) {
+  .rowdetails h4 {
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* check into this */
@@ -1215,6 +1860,18 @@ input[type="submit"]:hover {
   justify-content: center;
   text-align: center;
   padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .sectioncentered {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+   .sectioncentered {
+     width: 100%;
+   }
 }
 
 .sectioncentered h3 {
@@ -1233,9 +1890,20 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 991px) {
+  .sectioncenteredwider {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectioncenteredwider {
+    width: 100%;
+  }
+}
+
 /* FOR THE SECTIONS WITH ICON2 AND DESCRIPTION */
 .sectionwrapper {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   padding-bottom: 5rem;
@@ -1243,14 +1911,34 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
+@media screen and (min-width: 650px) {
+  .sectionwrapper {
+    display: flex;
+  }
+}
+
 .sectionwrapperleft {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: left;
   padding-bottom: 5rem;
   padding-top: 5rem;
   width: 100%;
 }
+
+
+
+@media screen and (min-width: 650px) {
+  .sectionwrapperleft {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectionwrapperleft .icon2 {
+    padding-bottom:  5px;
+  }
+}
+
 
 .scroll {
   align-items: center;
@@ -1268,8 +1956,33 @@ input[type="submit"]:hover {
   text-align: left;
 }
 
+@media screen and (max-width: 850px) {
+  .sectionmiddle {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sectionmiddle {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectionmiddle {
+    width: 100%;
+  }
+}
+
 .smallerwidth {
   width: 70%;
+}
+
+
+@media screen and (max-width: 1490px) {
+  .smallerwidth {
+    width: 100%;
+  }
 }
 
 /* IN THE FOOTER*/
@@ -1316,9 +2029,29 @@ input[type="submit"]:hover {
     }
 }
 
+@media screen and (max-width: 900px) {
+  .spacebutton {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .space-media {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/*for the project designspecs*/
 .subcategory {
   font-weight: 700;
   padding-top: 3rem;
+}
+
+@media screen and (max-width: 650px) {
+  .subcategory {
+    padding-top: 1.5rem;
+  }
 }
 
 .subcategory p {
@@ -1331,6 +2064,28 @@ input[type="submit"]:hover {
   padding-top: 10rem;
 }
 
+@media screen and (max-width: 850px) {
+  .summary p {
+    padding-left: 50px;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .summary {
+    display: inline-block;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .summary p {
+    padding-left: 0px;
+    padding-top: 1.5rem;
+
+  }
+}
+
+
 .textaligncenter {
   text-align: center;
 }
@@ -1338,6 +2093,13 @@ input[type="submit"]:hover {
 .title {
   display: flex;
   width: 30%;
+}
+
+@media screen and (max-width: 650px) {
+  .title {
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .wireframephotos {
@@ -1357,8 +2119,43 @@ input[type="submit"]:hover {
   padding-left: 10%;
 }
 
+@media screen and (max-width: 650px) {
+  .wrapper2 {
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .john {
+    padding-top: 5rem;
+  }
+}
+
 .wrapperintro {
   width: 70%;
+}
+
+@media screen and (max-width: 1350px) {
+  .wrapperintro {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .wrapperintro {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapperintro {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapperintro {
+    width: 100%;
+  }
 }
 
 /*! Flickity v2.2.1
@@ -1366,24 +2163,34 @@ https://flickity.metafizzy.co
 ---------------------------------------------- */
 .main-carousel {
   background: #FFF;
-  height: 260px;
+  height: 400px;
   margin-top: 4rem;
   margin-bottom: 8rem;
   counter-reset: carousel-cell;
 }
 
+
 .carousel-cell {
-  width: 100%;
-  height: 260px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  justify-content: center;
-  padding: 0 8%;
+  align-items: center;
   background: #FFF;
   border-radius: 5px;
   counter-increment: carousel-cell;
   font-size: 2.4rem;
+  height: 180px;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0 10%;
+  width: 100%;
 }
+
+@media screen and (max-width: 770px) {
+  .main-carousel {
+
+  }
+}
+
+
 
 /* ---- cell-selector ---- */
 .carousel--cell-selector {
@@ -1404,36 +2211,51 @@ https://flickity.metafizzy.co
 @media screen and (min-width: 768px) {
   .carousel--media-queried .carousel-cell {
     width: 50%;
-  }
+}
 
-  .testimonials-carousel {
-    text-align: center;
-  }
 
-  .testimonial {
-    width: 100%;
-  }
+.testimonials-carousel {
+  text-align: center;
+}
 
-  .flickity-button, .flickity-button, .flickity-prev-next-button next {
-    width: 6rem;
-    height: 6rem;
-  }
+.testimonial {
+  width: 100%;
+}
 
-  .flickity-button-icon {
-    color: #B9B9B9;
-    border: none;
-  }
+.flickity-button, .flickity-button, .flickity-prev-next-button next {
+  width: 6rem;
+  height: 6rem;
+}
 
-  .flickity-page-dots .dot {
-    background-color: #DEDEDE;
-    opacity: 1;
-  }
+.flickity-button-icon {
+  color: #B9B9B9;
+  border: none;
+}
 
-  .flickity-page-dots .dot.is-selected {
-    background-image: linear-gradient(63deg,
-        rgba(242, 168, 168, 1) 1.9%,
-        rgba(94, 46, 165, 1) 90.1%);
-  }
+.flickity-page-dots .dot {
+  background-color: #DEDEDE;
+  opacity: 1;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-image: linear-gradient(63deg,
+      rgba(242, 168, 168, 1) 1.9%,
+      rgba(94, 46, 165, 1) 90.1%);
+}
+
+/* need to check on this */
+.flickity-viewport {
+  height: 260px;
+}
+
+.data-flickity {
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 
   /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on March 17, 2020 */
   @font-face {
@@ -1458,7 +2280,4 @@ https://flickity.metafizzy.co
       url("lemonmilk-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-  }
-
-  @media screen and (max-height: 1200px) {
   }
