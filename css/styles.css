@@ -18,10 +18,10 @@ html {
 }
 
 @font-face {
-font-family: 'Lemon/Milk light Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Lemon/Milk light Regular'), url('LemonMilklight.woff') format('woff');
+  font-family: 'Lemon/Milk light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk light Regular'), url('LemonMilklight.woff') format('woff');
 }
 
 body {
@@ -35,21 +35,31 @@ h1 {
   font-size: 2.4rem;
   font-weight: 900;
   letter-spacing: 10px;
-  line-height: 6rem;
+  line-height: 4.5rem;
 }
 
 .header h1 {
-    font-family: 'Lemon/Milk light Regular';
+  font-family: 'Lemon/Milk light Regular';
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  line-height: 6rem;
+}
+
+@media screen (min-width: 575px)
+
+/*smartphones*/
+  {
+  h1 {
     font-size: 2.4rem;
-    font-weight: 900;
-    letter-spacing: 10px;
-    line-height: 6rem;
+    line-height: 4rem;
   }
 }
 
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 2.8rem;
+    line-height: 5rem;
   }
 
   .header h1 {
@@ -57,10 +67,10 @@ h1 {
   }
 }
 
-
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.4rem;
+    line-height: 6rem;
   }
 
   .header h1 {
@@ -70,7 +80,8 @@ h1 {
 
 @media screen and (min-width: 900px) {
   h1 {
-    font-size: 2.0rem;
+    font-size: 2.4rem;
+    letter-spacing: 8px;
     line-height: 4rem;
   }
 
@@ -80,45 +91,28 @@ h1 {
   }
 }
 
-
-
-/* laptops */
-@media screen and (min-width: 991px) {
-  h1 {
-    font-size: 2.0rem;
-    line-height: 4.5rem;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
   h1 {
     font-size: 2.8rem;
+    letter-spacing: 9px;
+    line-height: 5rem;
   }
 }
 
 /*desktops*/
 @media screen and (min-width: 1500px) {
   h1 {
-      font-size: 3.6rem;
-      letter-spacing: 10px;
-      line-height: 6rem;
+    font-size: 3.6rem;
+    letter-spacing: 10px;
+    line-height: 6rem;
   }
 }
-
-
-@media screen (min-width: 575px) /*smartphones*/ {
-  h1 {
-    font-size: 2.0rem;
-    line-height: 4rem;
-  }
-}
-
 
 h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
@@ -131,6 +125,13 @@ h2 {
   padding-top: 6rem;
 }
 
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+  }
+}
+
 @media screen and (min-width 900px) {
   h2 {
     font-size: 4.8rem;
@@ -138,8 +139,6 @@ h2 {
     line-height: 0rem;
   }
 }
-
-
 
 /*aboutstyles.css
 
@@ -157,9 +156,17 @@ h3 {
   font-size: 3.6rem;
 }
 
+@media screen and (max-width: 450px) {
+  h3 {
+    font-size: 3.0rem;
+    line-height: 4.5rem;
+  }
+}
+
 .ab h3 {
   line-height: 5rem;
-  font-weight: 500; /* check into why I made this weight 500 */
+  font-weight: 500;
+  /* check into why I made this weight 500 */
 }
 
 @media screen and (max-width: 1200px) {
@@ -180,7 +187,6 @@ h3 {
   }
 }
 
-
 h4 {
   font-size: 2.4rem;
 }
@@ -199,8 +205,6 @@ h5 {
   line-height: 0rem;
 }
 */
-
-
 h6 {
   color: #955BA7;
   font-size: 1.6rem;
@@ -215,30 +219,28 @@ p {
   font-size: 2rem;
   font-style: normal;
   font-variant: normal;
-  /* font-weight: regular; */
   letter-spacing: -.01rem;
   line-height: 3.5rem;
-  /*margin: 50px 0px;  main.css includes this*/
 }
 
+@media screen and (min-width: 900px)
 
-
-
-@media screen and (min-width: 900px) /*laptops*/ {
+/*laptops*/
+  {
   p {
     font-size: 2.0rem;
   }
 }
 
+@media screen and (min-width: 1199px)
 
-@media screen and (min-width: 1199px) /*desktops*/ {
+/*desktops*/
+  {
   p {
     font-size: 2.0rem;
     line-height: 3.5rem;
   }
 }
-
-
 
 .about p {
   line-height: 4rem;
@@ -261,7 +263,6 @@ p {
     padding-top: 2rem;
   }
 }
-
 
 .aboutbuttonsection {
   padding: 10% 0% 60% 10%;
@@ -295,7 +296,6 @@ p {
   }
 }
 
-
 .aboutcolumn1 {
   display: flex;
   flex-direction: column;
@@ -320,7 +320,9 @@ p {
   padding-top: 3%;
 }
 
-@media screen and (max-width: 1250px) { /* laptop screen */
+@media screen and (max-width: 1250px) {
+
+  /* laptop screen */
   .aboutcontainer {
     width: 90%;
   }
@@ -336,12 +338,13 @@ p {
   padding-top: 0%;
 }
 
-@media screen and (max-width: 991px) { /* laptop screen */
+@media screen and (max-width: 991px) {
+
+  /* laptop screen */
   .aboutcontainer1 {
     flex-wrap: nowrap;
     width: 90%;
   }
-
 
   .aboutcontainer1 .newsection {
     padding-top: 5rem;
@@ -349,16 +352,17 @@ p {
 }
 
 .aboutcontainer1 h1 {
-    font-size: 3.8rem;
-    line-height: 6rem;
-    letter-spacing: 10px;
+  font-size: 3.8rem;
+  line-height: 6rem;
+  letter-spacing: 10px;
 }
 
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width: 991px) { /* laptop screen */
+  /* laptop screen */
   .aboutcontainer1 h1 {
-      font-size: 3.6rem;
-      letter-spacing: 10px;
+    font-size: 3.6rem;
+    letter-spacing: 10px;
   }
 }
 
@@ -377,14 +381,6 @@ p {
     letter-spacing: 5px;
   }
 }
-
-
-
-
-
-
-
-
 
 .aboutcontainer2 {
   display: flex;
@@ -488,7 +484,6 @@ p {
   }
 }
 
-
 .arrowdown {
   align-items: center;
   display: flex;
@@ -570,7 +565,6 @@ p {
   }
 }
 
-
 .box2 {
   width: 100%;
 }
@@ -586,6 +580,7 @@ p {
     width: 40%;
     height: 30%;
   }
+
   .box2 img {
     display: flex;
   }
@@ -595,9 +590,7 @@ p {
   }
 }
 
-
 /* FOR HOMEPAGE - PROJECT FITPATH*/
-
 .box3 {
   width: 100%;
 }
@@ -605,6 +598,13 @@ p {
 @media screen and (max-width: 900px) {
   .box3 {
     padding-left: 5%;
+  }
+
+  .box3 h2 {
+    padding-top: 3rem;
+  }
+
+  .box3 p {
     padding-right: 5%;
   }
 
@@ -612,10 +612,6 @@ p {
     padding-top: 4rem;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 900px) {
   .homerightalign {
@@ -630,8 +626,6 @@ p {
     padding: 3% 14%;
     width: 60%;
   }
-
-
 }
 
 .box4 {
@@ -672,6 +666,18 @@ p {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 375px) {
+  .button {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button {
+    padding: 15px 35px;
+  }
+}
+
 .button2 {
   background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
   border: none;
@@ -703,7 +709,6 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 @media screen and (max-width: 991px) {
   .buttonbody {
@@ -738,12 +743,6 @@ p {
   }
 }
 
-
-
-
-
-
-
 .buttonfixed {
   background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 1.9%, rgba(94, 46, 165, 1) 90.1%);
   border: none;
@@ -760,7 +759,14 @@ p {
   text-transform: uppercase;
 }
 
-
+@media screen and (max-width: 400px) {
+  .buttonfixed {
+    font-size: 1.4rem;
+    padding: 15px 15px;
+    min-width: 0rem;
+    width: 80%;
+  }
+}
 
 .centered {
   justify-content: center;
@@ -814,8 +820,6 @@ p {
   }
 }
 
-@media screen and (min-width: )
-
 /* FOR THE 3 COLUMN MIND MAPPING SKETCHING*/
 .column-three h4 {
   padding-top: 3rem;
@@ -868,9 +872,6 @@ p {
   }
 }
 
-
-
-
 @media screen and (max-width: 550px) {
   .columncenter .logo {
     padding-left: 5rem;
@@ -884,7 +885,6 @@ p {
     padding-right: 0rem;
   }
 }
-
 
 .columncenter img {
   max-width: 100%;
@@ -946,8 +946,6 @@ p {
   }
 }
 
-
-
 .contactsectioncentered {
   flex-wrap: nowrap;
   justify-content: center;
@@ -964,7 +962,6 @@ p {
   /* changed from 3rem */
   width: 90%;
 }
-
 
 @media screen and (max-width: 991px) {
   .container {
@@ -1052,11 +1049,10 @@ p {
 }
 
 @media screen and (min-width: 1500px) {
-  .containerhero p{
+  .containerhero p {
     padding: 50px 0px;
   }
 }
-
 
 .copywright {
   text-align: center;
@@ -1152,7 +1148,6 @@ p {
   }
 }
 
-
 .footerlinks {
   display: inline;
   flex-wrap: nowrap;
@@ -1172,7 +1167,6 @@ p {
   }
 }
 
-
 .footerlinks a {
   padding: 2.5rem;
   text-decoration: none;
@@ -1184,7 +1178,6 @@ p {
     line-height: 5rem;
   }
 }
-
 
 .footerlogo {
   display: inline;
@@ -1244,7 +1237,6 @@ p {
   max-width: 100%;
 }
 
-
 /* adding extra padding on the home screen */
 .hero {
   padding-top: 8%;
@@ -1262,9 +1254,15 @@ p {
   width: 10%;
 }
 
-@media screen and (max width: 600px) {
+@media screen and (max-width: 400px) {
   .icon2 {
-    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  .icon2 img {
+    padding-bottom: 3rem;
   }
 }
 
@@ -1280,14 +1278,7 @@ p {
     width: 100%;
   }
 }*/
-
-img .icon2 {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 100%;
-}
-
-
+/* if img was set to max-width=100%, the icon sizes are affected */
 img {
   display: inline-block;
   vertical-align: middle;
@@ -1307,7 +1298,13 @@ img {
   .homescreen img {
     max-width: 100%;
   }
+}
 
+/* img-resize is made to help resize any images down to 100%. */
+@media screen and (max-width: 650px) {
+  .img-resize img {
+    max-width: 100%;
+  }
 }
 
 /* CONTACT FORM */
@@ -1414,7 +1411,6 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-
 /* CONTAINERS FOR HOMEPAGE */
 .homecontainer {
   /*changed on css but not index.hmtl */
@@ -1427,7 +1423,6 @@ input[type="submit"]:hover {
   width: 80%;
   padding-top: 3%;
 }
-
 
 .homecontainer2 {
   align-items: center;
@@ -1453,8 +1448,6 @@ input[type="submit"]:hover {
   }
 }
 
-
-
 .homecontainer3 {
   align-items: center;
   height: 100%;
@@ -1474,13 +1467,11 @@ input[type="submit"]:hover {
   }
 }
 
-
 @media screen and (max-width: 400px) {
   .homecontainer3 {
     width: 95%;
   }
 }
-
 
 /* FOR A NEW CATEGORY */
 .largeheadline {
@@ -1490,12 +1481,17 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  .largeheadline h2 {
+    line-height: 5rem;
+  }
+}
+
 .largeheadline h3 {
   display: flex;
   text-align: center;
   justify-content: center;
 }
-
 
 .line-home {
   display: none;
@@ -1557,6 +1553,7 @@ input[type="submit"]:hover {
   .nav-items .aboutpg {
     display: none;
   }
+
   .nav-items .projectpg {
     display: none;
   }
@@ -1592,7 +1589,6 @@ input[type="submit"]:hover {
     padding-top: 0rem;
   }
 }
-
 
 .padding {
   padding-right: 20%;
@@ -1639,17 +1635,33 @@ input[type="submit"]:hover {
     margin-right: auto;
     width: 52%;
   }
-  .proj-button-rm {
-    display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .project-button {
+    padding-top: 1rem;
+  }
+
+  .proj-button a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .proj-button a {
-    display: ;
+  .proj-buttonrm2 {
+    display: none;
   }
 }
 
+/* to remove April J button */
+@media screen and (max-width: 650px) {
+  .proj-button-rm {
+    display: none;
+  }
+}
 
 /* FOR CENTERED BUTTONS AT END */
 .project-button2 {
@@ -1660,8 +1672,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-
-
 .project-header {
   position: absolute;
   top: 2%;
@@ -1669,7 +1679,13 @@ input[type="submit"]:hover {
   width: 40%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 1600px) {
+  .project-header {
+    top: 4%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
   .project-header {
     top: 0%;
     padding-left: 5%;
@@ -1798,8 +1814,6 @@ input[type="submit"]:hover {
   }
 }
 
-
-
 /*for mind mapping & sketching for FitPath */
 .row3 {
   flex-direction: row;
@@ -1820,13 +1834,11 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 400px) {
   .row3logo {
-
+    display: inline;
   }
 }
-
-
 
 .row4 {
   display: flex;
@@ -1869,9 +1881,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 650px) {
-   .sectioncentered {
-     width: 100%;
-   }
+  .sectioncentered {
+    width: 100%;
+  }
 }
 
 .sectioncentered h3 {
@@ -1915,6 +1927,10 @@ input[type="submit"]:hover {
   .sectionwrapper {
     display: flex;
   }
+
+  .sectionwrapperleft {
+    display: flex;
+  }
 }
 
 .sectionwrapperleft {
@@ -1925,20 +1941,11 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
-
-
-@media screen and (min-width: 650px) {
-  .sectionwrapperleft {
-    display: flex;
-  }
-}
-
 @media screen and (max-width: 650px) {
   .sectionwrapperleft .icon2 {
-    padding-bottom:  5px;
+    padding-bottom: 5px;
   }
 }
-
 
 .scroll {
   align-items: center;
@@ -1978,7 +1985,6 @@ input[type="submit"]:hover {
   width: 70%;
 }
 
-
 @media screen and (max-width: 1490px) {
   .smallerwidth {
     width: 100%;
@@ -1986,7 +1992,6 @@ input[type="submit"]:hover {
 }
 
 /* IN THE FOOTER*/
-
 .sociallinks {
   display: flex;
   flex-wrap: wrap;
@@ -2000,7 +2005,6 @@ input[type="submit"]:hover {
     width: 200px;
   }
 }
-
 
 .sociallinks img {
   padding: 10px;
@@ -2026,7 +2030,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 1199px) {
   .space50 {
     padding-top: 20px;
-    }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -2067,7 +2071,6 @@ input[type="submit"]:hover {
 @media screen and (max-width: 850px) {
   .summary p {
     padding-left: 50px;
-
   }
 }
 
@@ -2081,10 +2084,8 @@ input[type="submit"]:hover {
   .summary p {
     padding-left: 0px;
     padding-top: 1.5rem;
-
   }
 }
-
 
 .textaligncenter {
   text-align: center;
@@ -2163,12 +2164,41 @@ https://flickity.metafizzy.co
 ---------------------------------------------- */
 .main-carousel {
   background: #FFF;
-  height: 400px;
+  height: 200px;
   margin-top: 4rem;
   margin-bottom: 8rem;
   counter-reset: carousel-cell;
+  padding-bottom: 0%;
 }
 
+@media screen and (max-width: 750px) {
+  .main-carousel {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-carousel {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-carousel {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-carousel {
+    height: 450px;
+  }
+}
+
+.carousel .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
 
 .carousel-cell {
   align-items: center;
@@ -2176,21 +2206,13 @@ https://flickity.metafizzy.co
   border-radius: 5px;
   counter-increment: carousel-cell;
   font-size: 2.4rem;
-  height: 180px;
+  height: 100%;
   justify-content: center;
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 0 10%;
   width: 100%;
 }
-
-@media screen and (max-width: 770px) {
-  .main-carousel {
-
-  }
-}
-
-
 
 /* ---- cell-selector ---- */
 .carousel--cell-selector {
@@ -2211,73 +2233,48 @@ https://flickity.metafizzy.co
 @media screen and (min-width: 768px) {
   .carousel--media-queried .carousel-cell {
     width: 50%;
-}
-
-
-.testimonials-carousel {
-  text-align: center;
-}
-
-.testimonial {
-  width: 100%;
-}
-
-.flickity-button, .flickity-button, .flickity-prev-next-button next {
-  width: 6rem;
-  height: 6rem;
-}
-
-.flickity-button-icon {
-  color: #B9B9B9;
-  border: none;
-}
-
-.flickity-page-dots .dot {
-  background-color: #DEDEDE;
-  opacity: 1;
-}
-
-.flickity-page-dots .dot.is-selected {
-  background-image: linear-gradient(63deg,
-      rgba(242, 168, 168, 1) 1.9%,
-      rgba(94, 46, 165, 1) 90.1%);
-}
-
-/* need to check on this */
-.flickity-viewport {
-  height: 260px;
-}
-
-.data-flickity {
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-  /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on March 17, 2020 */
-  @font-face {
-    font-family: "lemon_milkbold";
-    src: url("lemonmilk-bold-webfont.woff2") format("woff2"),
-      url("lemonmilk-bold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+    height: 100%;
   }
 
-  @font-face {
-    font-family: "lemon_milklight";
-    src: url("lemonmilk-light-webfont.woff2") format("woff2"),
-      url("lemonmilk-light-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  .testimonials-carousel {
+    text-align: center;
   }
 
-  @font-face {
-    font-family: "lemon_milkregular";
-    src: url("lemonmilk-regular-webfont.woff2") format("woff2"),
-      url("lemonmilk-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  .testimonial {
+    width: 100%;
   }
+
+  .flickity-button, .flickity-button, .flickity-prev-next-button next {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .flickity-button-icon {
+    color: #B9B9B9;
+    border: none;
+  }
+
+  .flickity-page-dots .dot {
+    background-color: #DEDEDE;
+    opacity: 1;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background-image: linear-gradient(63deg,
+        rgba(242, 168, 168, 1) 1.9%,
+        rgba(94, 46, 165, 1) 90.1%);
+  }
+
+  .flickity-viewport {
+    height: 100%;
+  }
+
+  .data-flickity {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+}
