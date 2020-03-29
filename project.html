@@ -37,6 +37,21 @@
       <!--button to contact-->
       <li><a class="contact button" href="contact.html">contact</a></li>
     </ul>
+
+    <!-- MOBILE HAMBURGER MENU -->
+    <div class="nav-dropdown">
+      <a href="#home" class="active"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="about.html">About</a>
+        <a href="project.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/ico/Menu.svg" alt="">
+      </a>
+    </div>
   </nav>
 
   <!--HERO BANNER-->
@@ -527,6 +542,7 @@
                     </a>
                   </div>
                 </div>
+              </div>
 
             </section>
           </div>
@@ -1072,7 +1088,8 @@
     </a>
   </section>
 
-
+<!-- Javascript -->
+<script src="js/menu.js"></script>
 
   <footer class="footerwrapper">
     <div class="footercontainer">

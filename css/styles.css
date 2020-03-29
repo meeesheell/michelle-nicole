@@ -46,10 +46,7 @@ h1 {
   line-height: 6rem;
 }
 
-@media screen (min-width: 575px)
-
-/*smartphones*/
-  {
+@media screen and (min-width: 575px) {
   h1 {
     font-size: 2.4rem;
     line-height: 4rem;
@@ -132,7 +129,7 @@ h2 {
   }
 }
 
-@media screen and (min-width 900px) {
+@media screen and (min-width: 900px) {
   h2 {
     font-size: 4.8rem;
     padding-top: 10rem;
@@ -207,8 +204,6 @@ h4 {
     line-height: 3rem;
   }
 }
-
-
 
 h5 {
   font-size: 2.0rem;
@@ -877,8 +872,6 @@ p {
   padding-right: 2rem;
 }
 
-
-
 @media screen and (min-width: 991px) {
   .columncenter {
     padding-bottom: 5rem;
@@ -894,7 +887,6 @@ p {
     padding-right: 2rem;
   }
 }
-
 
 @media screen and (max-width: 450px) {
   .columncenter {
@@ -937,7 +929,6 @@ p {
   height: auto;
 }
 
-
 @media screen and (max-width: 650px) {
   .columncenter img {
     padding-top: 5rem;
@@ -949,6 +940,7 @@ p {
   .columncenter h4 {
     font-size: 2.0rem;
   }
+
   .columncenter img {
     padding-bottom: 1rem;
   }
@@ -1052,6 +1044,12 @@ p {
   align-items: center;
   text-align: center;
   width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+  .containercontact {
+    width: 95%;
+  }
 }
 
 .containercontact p {
@@ -1271,7 +1269,7 @@ p {
 }
 
 /* breakpoints for "Michelle Nicole Design" header*/
-@media screen and (min-width: 1035 px) {
+@media screen and (min-width: 1035px) {
   .header h1 {
     display: flex;
     align-items: center;
@@ -1462,6 +1460,20 @@ input[type="submit"] {
   }
 }
 
+@media screen and (max-width: 500px) {
+
+  .containerform,
+  input[type="submit"] {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: #45a049;
@@ -1525,7 +1537,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 400px) {
   .homecontainer3 {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -1559,6 +1571,61 @@ input[type="submit"]:hover {
   }
 }
 
+/* Style the navigation menu for Hamburger Menu */
+@media screen and (max-width: 500px) {
+  .nav-dropdown {
+    background-color: #FFF;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .nav-dropdown #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .nav-dropdown a {
+    color: #955BA7;
+    display: block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 30px 30px 20px 40%;
+    text-decoration: none;
+  }
+
+  /* Style the hamburger menu */
+  .nav-dropdown a.icon {
+    color: #955BA7;
+    display: block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    padding: 20px 30px 20px 60%;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+  }
+
+  .myLinks a {
+    color: #955BA7;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    color: #5E2EA5;
+  }
+}
+
+/*to remove the hamburger menu functionality*/
+@media screen and (min-width: 500px) {
+  .nav-dropdown {
+    display: none;
+  }
+}
+
 /* FOR THE NAVIGATION */
 .nav-header {
   align-items: center;
@@ -1568,7 +1635,18 @@ input[type="submit"]:hover {
   padding-top: 1%;
 }
 
+@media screen and (max-width: 500px) {
+  .nav-header {
+    align-items: flex-start;
+  }
+}
+
 .nav-header a {
+  color: #955BA7;
+  text-decoration: none;
+}
+
+.header a {
   color: #141414;
   text-decoration: none;
 }
@@ -1599,6 +1677,12 @@ input[type="submit"]:hover {
   font-weight: bold;
   padding-left: 0rem;
   padding-right: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-items {
+    display: none;
+  }
 }
 
 .nav-items ul {
@@ -1673,9 +1757,6 @@ input[type="submit"]:hover {
     padding-left: 0%;
   }
 }
-
-
-
 
 .photo {
   display: flex;
@@ -1826,7 +1907,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 765px) {
   .project-header p {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -1853,8 +1934,7 @@ input[type="submit"]:hover {
   }
 }
 
-/* swapping out the large and smaller hero photos */ 
-
+/* swapping out the large and smaller hero photos */
 @media screen and (min-width: 616px) {
   .project-hero-lg {
     width: 100%;
@@ -1874,7 +1954,6 @@ input[type="submit"]:hover {
     width: 100%;
   }
 }
-
 
 /*FOR SPACING */
 .projectnewsection {
@@ -2118,6 +2197,12 @@ input[type="submit"]:hover {
   .sociallinks {
     justify-content: space-around;
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sociallinks {
+    padding: 20px;
   }
 }
 
