@@ -1291,6 +1291,13 @@ p {
   max-width: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  .header img {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
 /* adding extra padding on the home screen */
 .hero {
   padding-top: 8%;
@@ -1602,7 +1609,7 @@ input[type="submit"]:hover {
     display: block;
     font-family: "Open Sans";
     font-weight: bold;
-    padding: 20px 30px 20px 60%;
+    /* padding: 20px 30px 20px 60%; */
     position: absolute;
     right: 0;
     text-decoration: none;
