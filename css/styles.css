@@ -556,6 +556,23 @@ p {
   }
 }
 
+
+.userflowssm img {
+  width: 100%;
+}
+
+@media screen and (min-width: 850px) {
+  .userflowssm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .userflowslg {
+    display: none;
+  }
+}
+
 /* FOR THE HERO SECTION */
 .box1 {
   width: 100%;
@@ -844,10 +861,11 @@ p {
 }
 
 .column4 {
-  text-align: center;
-  margin: 0em;
   flex: 1 1 auto;
-  width: 25%;
+  margin: 0em;
+  text-align: center;
+  padding-right: 1%;
+  width: 23%;
 }
 
 @media screen and (max-width: 650px) {
@@ -860,7 +878,7 @@ p {
 /* spacing for the survey analysis */
 .column4 h6 {
   padding-top: 1rem;
-  line-height: 2.3rem;
+  line-height: 2.5rem;
 }
 
 .columncenter {
