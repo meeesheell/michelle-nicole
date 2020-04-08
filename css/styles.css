@@ -2402,7 +2402,7 @@ https://flickity.metafizzy.co
 ---------------------------------------------- */
 .main-carousel {
   background: #FFF;
-  height: 200px;
+  height: 400px;
   margin-top: 4rem;
   margin-bottom: 8rem;
   counter-reset: carousel-cell;
@@ -2411,25 +2411,25 @@ https://flickity.metafizzy.co
 
 @media screen and (max-width: 750px) {
   .main-carousel {
-    height: 250px;
+    height: 450px;
   }
 }
 
 @media screen and (max-width: 650px) {
   .main-carousel {
-    height: 300px;
+    height: 500px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .main-carousel {
-    height: 350px;
+    height: 650px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .main-carousel {
-    height: 450px;
+    height: 700px;
   }
 }
 
