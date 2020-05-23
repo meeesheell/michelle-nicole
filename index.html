@@ -34,7 +34,15 @@
     </div>
     <ul class="nav-items">
       <li><a class="link" style="float:right" href="about.html">About</a></li>
-      <li><a class="link" style="float:right" href="project.html">Portfolio</a></li>
+      <li>
+            <div class="dropdown">
+              <button class="dropbtn">Portfolio</button>
+              <div class="dropdown-content">
+                <a href="sip.html">Sip</a>
+                <a href="projects.html">FitPath</a>
+              </div>
+            </div>
+          </li>
       <!--button to contact-->
       <li><a class="contact button" href="contact.html">contact</a></li>
     </ul>
@@ -95,6 +103,25 @@
   <section class="homecontainer2">
     <div class="box box3 projects" id="projects">
       <h6>Projects</h6>
+      <h2>Sip</h2>
+      <p>An educational and recipe video content site utilizing augmented reality to easily and efficiently learn how to make coffee in the comfort of your own home.</p>
+      <div class="homerightalign homescreen">
+        <img class="mobilescreen" src="images/home/Sip_homepage.png" alt="Sip">
+      </div>
+      <div class="centeredmobile spacebutton">
+        <a class="button" href="sip.html">View Case Study</a>
+      </div>
+    </div>
+
+    <!--PROJECT PHOTOS-->
+    <div class="box box4 projpic">
+      <img src="images/home/Sip_homepage.png" alt="FitPath">
+    </div>
+  </section>
+
+  <section class="homecontainer2">
+    <div class="box box3 projects" id="projects">
+      <h6>Projects</h6>
       <h2>FitPath</h2>
       <p>The fitness application helping people of all ages and experiences easily discover the perfect workouts that fit their needs and goals.</p>
       <div class="homerightalign homescreen">
@@ -150,7 +177,7 @@
         <a href="about.html">
           <h6>about</h6>
         </a>
-        <a href="project.html">
+        <a href="index.html" id="#projects">
           <h6>portfolio</h6>
         </a>
         <a href="contact.html">
