@@ -1794,6 +1794,14 @@ input[type="submit"]:hover {
   }
 }
 
+.paragraph p {
+  flex-wrap: nowrap;
+  line-height: 3.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  width: 100%;
+}
+
 .photo {
   display: flex;
   align-content: space-around;

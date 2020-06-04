@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Los Angeles Product Designer | Michelle Nicole Ng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Reset.css-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!-- FONTS -->
+  <link href="LemonMilk.woff" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+
+  <!--ANIMATION -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <!--CUSTOM STYLES-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+</head>
+
+<body>
+  <nav class="nav-header">
+    <div class="header">
+      <a href="index.html"><img src="images/logo/mn_logo.svg" width=65 height=68 alt="logo"></a>
+      <a href="index.html">
+        <h1>Michelle Nicole Ng</h1>
+      </a>
+    </div>
+    <ul class="nav-items">
+      <li><a class="link" style="float:right" href="index.html#work">Work</a></li>
+      <li><a class="link" style="float:right" href="about.html">About</a></li>
+
+      <!--button to contact-->
+      <li><a class="contact button" href="contact.html">contact</a></li>
+    </ul>
+
+    <!-- MOBILE HAMBURGER MENU -->
+    <div class="nav-dropdown">
+      <a href="#home" class="active"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/ico/Menu.svg" alt="">
+      </a>
+    </div>
+  </nav>
+
+  <!--HERO BANNER-->
+  <div class="project-hero">
+    <img class="project-hero-lg" src="images/busybus/Hero_lg.jpg" alt="hero">
+    <img class="project-hero-sm" src="images/busybus/Hero_sm.jpg" alt="hero">
+
+    <div class="project-header">
+      <h2>BusyBus</h2>
+      <p>BusyBus is a visual design & frontend project that the local city transit system is working on for all commuters in a town near you.</p>
+    </div>
+  </div>
+
+  <div class="project-button">
+    <div class="centered-button">
+      <a class="button invision" href="https://meeesheell.github.io/busybus/" target="_blank">View on Github</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wrapperintro">
+
+      <!--Roles/Design Deliverables/Specifications-->
+      <div class="row designspecs">
+        <div class="columncenter rowdetails ab">
+
+          <img class="icon" src="images/ico/userflows.svg" alt="">
+          <ul>
+            <li>
+              <h4>Roles</h4>
+            </li>
+            <li>
+              <p>UX Designer</p>
+            </li>
+            <li>
+              <p>UX Researcher</p>
+            </li>
+            <li>
+              <p>Visual Designer</p>
+            </li>
+            <li>
+              <p>Frontend Developer</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columncenter ab">
+          <img class="icon" src="images/ico/designdeliverables.svg" alt="">
+          <ul>
+            <li>
+              <h4>Design Deliverables</h4>
+            </li>
+            <li>
+              <p class="condensed">Click on the design deliverables below to jump to specified section on this case study.</p>
+            </li>
+            <li class="subcategory">
+              <a href="#discoverystrategy">
+                <p>Discovery & Strategy Phase</p>
+              </a>
+            </li>
+            <li>
+              <a href="#usersurveys">
+                <p>User Surveys</p>
+              </a>
+            </li>
+            <li>
+              <a href="#competitiveanalysis">
+                <p>Competitive Analysis</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="subcategory">
+              <a href="#informationarchitecture">
+                <p>Information Architecture</p>
+              </a>
+            </li>
+            <li>
+              <a href="#userstories">
+                <p>User Stories</p>
+              </a>
+            </li>
+            <li>
+              <a href="#sketchprototype">
+                <p>Clickable Prototype</p>
+              </a>
+              <a href="#usabilitytesting">
+                <p>Usability Testing</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="subcategory">
+              <a href="#visualdesign">
+                <p>Visual Design</p>
+              </a>
+            </li>
+            <li>
+              <a href="#highfidmockups">
+                <p> High Fidelity Mockups</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="subcategory">
+              <a href="#frontend">
+                <p>Frontend Development</p>
+              </a>
+            </li>
+            <li>
+              <a href="#finaldesign">
+                <p>Final Design</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columncenter ab">
+          <img class="icon" src="images/ico/specifications.svg" alt="">
+          <ul>
+            <li>
+              <h4>Specifications</h4>
+            </li>
+            <li class="subcategory">
+              <p>Tools</p>
+            </li>
+            <li>
+              <a href="https://www.figma.com" target="_blank">
+                <p>Figma</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.invisionapp.com/" target="_blank">
+                <p>Marvel</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://maze.design/" target="_blank">
+                <p>Maze</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://usabilityhub.com/" target="_blank">
+                <p>Usability Hub</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank">
+                <p>Github</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://atom.io/" target="_blank">
+                <p>Atom</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+                <p>Adobe Photoshop</p>
+              </a>
+            </li>
+            <li class="subcategory">
+              <p>Duration</p>
+            </li>
+            <li>
+              <p>3 weeks</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!--Summary/Problem/Solution-->
+      <section>
+        <div class="summary">
+          <div class="title">
+            <h3>
+              Summary
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              When a local city starts to expand its public transportation bus routes, many times there are growing pains. For this expansion, our local city is running into a few problems and would like them resolved by creating an application. Our
+              role is to create BusyBus, a project that the local city transit system is working on for all commuters in a town near you.
+            </p>
+          </div>
+        </div>
+
+        <div class="summary">
+          <div class="title">
+            <h3>
+              Problem
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              Numerous bus routes have been added and many of those routes stop at the same bus stop. Riders are currently complaining the about the bus stop at Washington & State, which have 7 bus lines serving the stop.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="summary">
+          <div class="title">
+            <h3>
+              Solution
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              The goal is to work with the local city to create an interface application that easily helps riders know what the next arriving bus is, and how much time they have to get to the bus stop. We created BusyBus, an application to help
+              riders know what the next arriving bus is and how much time they have to get to the bus stop.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRATEGY PHASE -->
+      <div class="largeheadline" id="discoverystrategy">
+        <h2>The Discovery & Strategy Phase</h2>
+      </div>
+
+      <!-- USER SURVEYS -->
+      <div class="container" id="usersurveys">
+        <div class="sectionwrapper">
+
+          <div class="icon2">
+            <img src="images/ico/people.svg" alt="">
+          </div>
+
+          <div class="processdescription">
+            <section class="desc-intro">
+              <h6>User Surveys</h6>
+              <h3>Understanding our Target Market</h3>
+              <p>I conducted a survey on a new proposed app, called BusyBus, and over a 48 hour time span with a total of 21 respondents. Of the people who were surveyed, 100% of the respondents have taken some form of public transportation. I needed
+                to learn:</p>
+
+              <ul>
+                <li>
+                  <h5>The types of public transportation users take;</h5>
+                </li>
+                <li>
+                  <h5>How riders navigate their way through public transportation;</h5>
+                </li>
+                <li>
+                  <h5>Frustrations or confusions with public transportation;</h5>
+                </li>
+                <li>
+                  <h5>To find out what riders need to get to their destination without getting lost;</h5>
+                </li>
+                <li>
+                  <h5>What future solutions they would like to see to get from point A to B</h5>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="https://docs.google.com/document/d/1KUVFYWHV9V1uz5KPOCOps-IpLxp6QUA7B6bnIMf8Ei0/edit?usp=sharing" target="_blank">View Survey Analysis</a>
+        </div>
+      </div>
+
+      <!--SURVEY RESULTS-->
+      <div class="newsection">
+        <p>This survey was completed with 21 respondents. Here are some key results:</p>
+      </div>
+
+      <!--Roles/Design Deliverables/Specifications-->
+      <section class="surveyresults newsection">
+        <div class="row4">
+          <div class="column4">
+            <h3>100%</h3>
+            <h6>Have taken some form of public transportation</h6>
+          </div>
+          <div class="column4">
+            <h3>76%</h3>
+            <h6>Have gotten lost using public transportation at some point</h6>
+          </div>
+          <div class="column4">
+            <h3>81%</h3>
+            <h6>Checks their phone/app when they realize they are lost</h6>
+          </div>
+          <div class="column4">
+            <h3>73%</h3>
+            <h6>suggest having clearer signage throughout Public Transportation</h6>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="sectionwrapper">
+
+        <div class="icon2">
+          <img class="displaynone" src="images/ico/people.svg" alt="">
+        </div>
+
+        <div class="processdescription">
+          <section class="desc-intro">
+            <h5>If we were to make an app, what improvements would riders
+              like to see? Riders suggested:</h5>
+
+            <ul>
+              <li>
+                <h5>• Real time tracking</h5>
+              </li>
+              <li>
+                <h5>• Incorporating AR in the map or on a layover</h5>
+              </li>
+              <li>
+                <h5>• A better way to go offline (due to no service underground)</h5>
+              </li>
+              <li>
+                <h5>• Include photos of signs and a stop, or clearer landmarks as a point of reference so you know where you are</h5>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+
+      <!-- COMPETITIVE ANALYSIS -->
+      <div class="container newsection" id="competitiveanalysis">
+        <section class="sectionwrapper">
+          <div class="icon2">
+            <img class="competitiveanalysis" src="images/ico/competitiveanalysis.svg" alt="">
+          </div>
+
+          <div class="processdescription">
+            <div class="desc-intro">
+              <h6>Competitive Analysis</h6>
+              <h3>Looking at the current competition</h3>
+              <p>I ran a competitive analysis so that we understand the current transporatiton applicaitons in major metroplolitan areas. With a huge variety of applications that are currently out there, how could we make BusyBus stand out?</p>
+              <p>I did research on two different applications, one that 71% of my respondents prefer using: Google Maps, and then another application I was not familiar with but wanted to learn more about: Citymapper.</p>
+              <p>From this competitive analysis, I learned to create an application with a blend of both, focused on the local public transit bus system’s real time data and with great navigation. If possible, add in Augmented Reality!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--2 COLUMN LAYOUT-->
+      <div class="wrapper">
+        <div class="row">
+          <div class="column competitiveanalysis">
+            <section class="details">
+              <img class="googlemaps" src="images/busybus/googlemaps.jpeg" width="90%" alt="Google Maps">
+              <h5>Google Maps</h5>
+              <p>“Navigate your world faster and easier with Google Maps”.</p>
+
+              <p><b class="subcategory">Strengths</b><br>
+                Google is a widely known company, and Google Maps looks clean with clearly defined streets, highways, establishments with map details: Transit, Traffic, Biking</p>
+
+              <p><b class="subcategory">Weakness</b><br>
+
+                Walking directions can be tough when Wifi or cell phone data is low.</p>
+              <p>When figuring out where to travel to, the mode of travel is a swipe left or right - sometimes it’s hard to realize what mode of travel you’re on (car or train) until you look at the directions</p>
+
+              <p><b class="subcategory">Opportunities</b><br>
+
+                Brand: Google is one of the top, if not top widely known brand around the world and Google Maps is offered in 220 different countries so it’s helpful for travelers going from city to city and alleviates the pain of having to go from a
+                different application system.</p>
+
+
+              <p><b class="subcategory">Threats</b><br>
+
+                When using an iPhone, Apple Maps comes with it, so Google Maps is not dominant.
+                App can be more proficient with subway and public transportation.
+              </p>
+            </section>
+          </div>
+
+          <div class="column competitiveanalysis">
+            <!--added in competitive analysis, to make space between the columns but did not finish -->
+            <section class="details">
+              <img class="Citymapper" src="images/busybus/citymapper_logo.png" width="85%" alt="Citymapper">
+              <h5>Citymapper</h5>
+              <p>A “visual discovery engine for finding ideas like recipes, home and style inspiration, and more.”</p>
+
+              <p><b class="subcategory">Strengths</b><br>
+
+                You can select your mode of navigation through a toolbar - Maps, Bus, Muni, Bart, Lines, Rail, Bike, Scooter, Moped and more. Includes detailed public transportation info like timetables of a specific bus route, times you need to be
+                at the bus stop, how crowded your bus is, and if there are any seats for you.</p>
+
+              <p><b class="subcategory">Weaknesses</b><br>
+
+                Does not show driving GPS and navigation, and is not offered in all citiies.</p>
+
+              <p><b class="subcategory">Opportunities</b><br>
+
+                Brand: An all-in-one app for most types of transportation to help simplify all of the public transportation apps.</p>
+              <p>Has integration and partnership with many different external companies that help you get to your destination. If you take a specific mode of transportation, lets say a scooter, it shows all of the different scooters around and
+                integrated with different companies, such as Skip, Lime, Scoot, & Bird. </p>
+
+
+              <p><b class="subcategory">Threats</b><br>
+
+                Only offered in major cities. For a city that is not offered yet, another app can quickly enter to their city and dominate that area.</p>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- NEW SECTION: INFORMATION ARCHITECTURE PHASE -->
+      <section>
+        <div class="largeheadline" id="informationarchitecture">
+          <h2>Information Architecture Phase</h2>
+        </div>
+      </section>
+
+
+      <!-- USER STORIES -->
+      <section class="newsection container2" id="userstories">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/userstories.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>User Stories</h6>
+            <h3>Stories for every user</h3>
+            <p>Creating user storeis helped me create and prioritize tasks that must be accounted for in the application. Some of the user stories that helped make a Minimum Viable Prototype for the local public transportation app are:</p>
+            <ul>
+              <li>
+                <h5>As a returning user, I want to figure out which bus to take</h5>
+              </li>
+              <li>
+                <h5>As a returning user, I want to find out what time the next bus arrives</h5>
+              </li>
+              <li>
+                <h5>As a returning user, I want to know how much time I have to get to the bus stop</h5>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </section>
+
+      <div class="centered-button">
+        <div class="project-button">
+          <a class="button" href="https://docs.google.com/spreadsheets/d/1aecWr10JYTCpVsStg--fKoz5sxaL5ZPUhJ0p3HJgm0c/edit?usp=sharing" target="_blank">View User Stories</a>
+        </div>
+      </div>
+
+
+
+
+      <!-- SKETCHING -->
+      <section class="newsection container2" id="wireframes">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/pencil.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>Sketching</h6>
+            <h3>A three screen sketch prototype approach</h3>
+            <p>I created this three screen prototype of BusyBus, a project that the local city transit system is working on for all commuters in a town near you. I needed to create an app that helped riders know when the next arriving bus is and how
+              much time they have to get to the bus stop.</p>
+            <p>My thoughts to create these sketches are going to be described going from Screen #1 to Screen #3, which is from Left to Right. This is my BusyBus Three Screen Sketch Prototype that I created based off my User Survey, Competitive
+              Analysis, and User Stories.</p>
+            <p>
+              <ul>
+                <li>
+                  <p> • The first - map view that includes where you’d like to go</p>
+                </li>
+                <li>
+                  <p> • the second is a list of the bus stops that stop at the nearest bus stop Washington & State</p>
+                </li>
+                <li>
+                  <p> • third is a step-by-step direction on how to get to your destination</p>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <img src="/images/busybus/BusyBus_Sketches1.JPG" width=80% alt="">
+
+      <section class="newsection container2" id="wireframes">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="" src="images/ico/pencil.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h6>Usability Testing</h6>
+            <h3>User Testing on Maze</h3>
+            <p>I needed to test these screens to see if they were working as intended. In order to do so, I uploaded sketches to Marvel, and imported them to Maze.
+              Then, ran 4 tests to see if users would understand where to navigate.
+              With their screenshots below, heatmaps are shown where the user tapped and wanted to go. I asked users to: <h5>take me to my destination in the least amount of time.</h5>
+            </p>
+            <p>Based on the results, the user tests’ time varied between 9.8 seconds to 52.53 seconds, and I found:</p>
+            <p>
+              <ul>
+                <li>
+                  <h5> • 25 % of the users were able to go through the app efficiently without any misclicks</h5>
+                </li>
+                <li>
+                  <h5> • 50% of the users selected a bus on the first try to go to the last screen</h5>
+                </li>
+                <li>
+                  <h5> • 75% of users selected the “search” toolbar eventually to get to the next screen</h5>
+                </li>
+                <li>
+                  <h5> • 50% of users were able to select a bus to get to the last screen</h5>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <img src="/images/busybus/BusyBus_MazeTests.png" alt="" width=95%></img>
+
+      <section class="container2" id="wireframes">
+        <div class="sectionwrapperleft">
+
+          <div class="icon2">
+            <img class="displaynone" src="images/ico/pencil.svg" alt="">
+          </div>
+
+          <div class="processdescription desc-intro">
+            <h5>After analyzing these tests, it helped me understand what
+              worked and what doesn’t work.
+            </h5>
+
+
+
+            <ul>
+              <li>
+                <h5>• Navigating on screen #1:</h5>
+                <p>75% users seemed to go directly to the search bar, but the remaining user selected the icons underneath. I found that these icons underneath the search bar might not have been useful for this task.</p>
+              </li>
+              <li>
+                <h5>• Screen #2:</h5>
+                <p>Since the rider’s task was to the bus route that was the quickest, they did not need to re-enter their search. I wasn’t sure whether to remove the two search bars on the top, but decided to leave them there.</h5>
+              </li>
+              <li>
+                <h5>• Based on this feedback, I chose the most important screen (screen 2) and made some revisions.</h5>
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- PROTOTYPE -->
+      <section class="newsection container2" id="sketchprototype">
+        <div class="row leftalign">
+
+          <div class="column processdescription">
+            <div class="desc-intro padding">
+              <h6>Prototype</h6>
+              <h3>The BusyBus Sketch Prototype</h3>
+              <p>Picking out one of the screens that best resolves the issues, I chose this one so riders could easily view all of the buses that were arriving at that bus stop, and select which bus to take next.</p>
+              </li>
+              <ul>
+                <li>
+                  <p>• My thought process is to show a list of all the 7 buses showing up at Washington & State.</p>
+                </li>
+                <li>
+                  <p>• At the top shows two navigational fields to view, adjust, or re-input your start and end destination.</p>
+                </li>
+                <li>
+                  <p>• When looking at the list of buses, for each bus, from left to right, will display the bus number, how long the bus ride will take</p>
+                </li>
+                <li>
+                  <p>• The bus route</p>
+                </li>
+                <li>
+                  <p>• And how many minutes until the next upcoming bus(es) are arriving.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column img-resize">
+            <img src="images/busybus/BusyBus_Sketches_screen2.JPG" width=60% alt="BusyBus Sketch">
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!--NEW SECTION: VISUAL DESIGN PHASE-->
+    <section id="visualdesign">
+      <div class="largeheadline">
+        <h2>The Visual Design Phase</h2>
+      </div>
+    </section>
+
+
+    <!--div to close wrapperintro-->
+
+    <div class="container wrapperintro">
+      <div class="img-resize">
+        <img src="/images/busybus/BusyBus_VisualDesign.png" alt="" width=100%>
+      </div>
+
+      <div class="sectionmiddle paragraph">
+        <p>Throughout the visual design of BusyBus, I knew I wanted to keep the BusyBus app clean, simple, and light.</p>
+        <p>From the paper sketch prototype, I used Figma to create a visual design and high fidelity mockups based off my sketch, shown in the middle. I created the BusyBus and the next arriving bus icon, and used the iOS location icon for the rest.
+          After adding the icons in, the screen looked too repetitive, and literally, busy.
+        </p>
+        <img src="/images/busybus/BusyBus_IconLibrary.png" width=100% alt="">
+
+        <p>For the next high fidelity mockup and final design:
+          <p>• I removed the bus icon, and enlarged the bus number (I was bummed I wasn’t going to use my handmade bus icon)</p>
+          <p>• Removed the top navigational piece as it was not needed (initially from doing my competitive analysis, I thought doing a navigational piece was a great add on, but from the client, it was not). So I removed it to not introduce scope
+            creep</p>
+          <p>• Removed the next arriving bus icon</p>
+          <p>• The large blocks of numbers on the left hand side were too close together, so the minutes got moved to the right while the bus number remained </p>
+          <p>• The right hand alignment was hard to read for the buses, so it moved to the middle and was left aligned</p>
+
+          <p>After a few iterations, the final visual design of the the app is a light gray, and I added a pop of color for the bus numbers in purple. The bus information is in SF Pro Display and arrival time in SF Pro text, and are in different
+            sizes, weights, and colors to show visual heiarchy.</p>
+
+          <p>The final high fidelity mockup now helps riders know what the next arriving bus is by displaying the bus number (on the left), how much time they have to get to the next bus stop by including its frequency (in the middle), and how long
+            the bus ride will take (on the right). </p>
+      </div>
+    </div>
+
+    <!--insert button to view on figma here -->
+
+    <!-- BUTTON LINKS -->
+    <div class="centered-button space50">
+      <div class="project-button2">
+        <a class="buttonfixed" href="https://www.figma.com/file/RKURtJkEjf30oH4QA9LBJX/BusyBus-Michelle-Ng?node-id=2%3A0" target="_blank">View on Figma</a>
+      </div>
+
+
+      <section>
+        <div class="largeheadline" id="frontenddev">
+          <h2>Frontend Development</h2>
+        </div>
+      </section>
+
+      <div class="container wrapperintro">
+        <section class="container2" id="development">
+          <div class="sectionwrapperleft">
+
+            <div class="icon2">
+              <img class="" src="images/ico/finishingtouches.svg" alt="">
+            </div>
+
+            <div class="processdescription desc-intro">
+              <h6>Final Design</h6>
+
+              <h3>The Finishing Touches</h3>
+              <p>After finishing the high fidelity mockup, I learned how to use the terminal, Git, GitHub, HTML, and CSS to translate my visual design in Figma to a working prototype.  </p>
+              <div class="img-resize">
+                <img src="images/busybus/CodingBusyBus.png" width=1100 alt="">
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- BUTTON LINKS -->
+  <div class="centered-button">
+    <div class="project-button2">
+      <a class="buttonfixed" href="https://meeesheell.github.io/busybus/" target="_blank">View on Github</a>
+    </div>
+
+
+    <section>
+      <div class="container">
+
+        <div class="wrapperintro">
+          <div class="largeheadline">
+            <h3>The Evolution of BusyBus</h3>
+
+
+            <div class="space img-resize">
+              <a href="images/busybus/BusyBus_FinalDesign.png" target="_blank"><img src="images/busybus/BusyBus_FinalDesign.png" alt=""></a>
+              <p>Click photo to view larger</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container wrapperintro">
+          <div class="sectionmiddle closingparagraph">
+            <p>When implementing the frontend HTML & CSS, we were provided with the correct bus numbers, names of the bus routes, direction the buses are going in, frequency, and even outages. I removed the “BUS” above the bus number to remove
+              redundancies, left aligned the bus number, but kept its color purple. For out of service buses, I highlighted them in red and changed their duration to 0 minutes to alert riders.</p>
+
+            <p>What I learned the most from this BusyBus case study was visual heiarchy, frontend HTML & CSS, and learning how to keep your designs simple. For coding, I learned how to create objects within CSS, and how much alignment is important.
+              On my frontend development, I do have a hover over state, but since this is a mobile app, users will not enjoy this feature.</p>
+
+            <p>Currently, not all screens are built out, but the basic visual design and HTML & CSS is there. If I was given more time, I would build out the other two BusyBus screens that were sketched.</p>
+
+            <p>Thank you! I hope you enjoyed this case study!</p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--Go to next case study link - Add in when next case study is added.
+  <div class="centered-button">
+    <div class="project-button">
+      <a class="button" href="project2.html">Go to next Case Study</a>
+    </div>
+  </div> -->
+
+
+
+
+
+    <!--BACK TO TOP LINK-->
+    <section class="backtotopcontainer">
+      <a class="gototop" href="#">
+        <h6>Back to Top</h6>
+      </a>
+    </section>
+
+    <!-- Javascript -->
+    <script src="js/menu.js"></script>
+
+
+    <footer class="footerwrapper">
+      <div class="footercontainer">
+        <div class="footerlogo">
+          <a href="index.html"><img class="centeredmobile" src="images/logo/mn_logo.svg" width=65 alt="mn logo"></a>
+        </div>
+
+        <div class="footerlinks">
+          <a href="index.html#work">
+            <h6>work</h6>
+          </a>
+          <a href="about.html">
+            <h6>about</h6>
+          </a>
+          <a href="contact.html">
+            <h6>contact</h6>
+          </a>
+        </div>
+
+
+        <div class="sociallinks">
+
+          <a href="https://github.com/meeesheell" target="_blank">
+            <img src="images/ico/github1.svg" alt="GitHub">
+          </a>
+          <a href="https://linkedin.com/in/michellenng" target="_blank">
+            <img src="images/ico/Linkedin.svg" alt="Linkedin">
+          </a>
+          <a href="https://twitter.com/michellenng" target="_blank">
+            <img src="images/ico/twitter.svg" alt="Twitter">
+          </a>
+
+        </div>
+      </div>
+
+      <div class="copyright">
+        <h6>© Designed & Developed By Michelle Nicole Ng 2020</h6>
+      </div>
+
+
+
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLX9ZH51VC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-HLX9ZH51VC');
+    </script>
+
+</body>
+
+</html>
