@@ -1953,9 +1953,11 @@ input[type="submit"]:hover {
   align-content: space-around;
 }
 
+/*
 .photo img {
-  width: 100%;
+  width: auto;
 }
+*/
 
 .preftestingimg {
   width: 100%;
