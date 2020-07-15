@@ -2064,7 +2064,7 @@ input[type="submit"]:hover {
 
 .project-header {
   position: absolute;
-  top: 2%;
+  top: 1%;
   padding-left: 10%;
   width: 40%;
 }
@@ -2079,7 +2079,7 @@ input[type="submit"]:hover {
   .project-header {
     top: 0%;
     padding-left: 5%;
-    width: 60%;
+    /*width: 60%; */
   }
 }
 
@@ -2230,7 +2230,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 991px) {
   .row3 {
-    display: inline;
+    display: flex;
   }
 }
 
