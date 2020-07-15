@@ -322,7 +322,7 @@ h6 {
 p {
   color: #616161;
   font-family: "IBM Plex Sans";
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0rem;
@@ -365,19 +365,39 @@ p.hero-text {
 
 }
 
+
 .about p {
-  line-height: 4rem;
-  margin-bottom: 5rem;
+  line-height: 175%;
+  margin-bottom: 0rem;
+}
+
+
+.about ul {
+  list-style-type: disc;
+  color: #616161;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0rem;
+  margin-left: 10%;
+}
+
+
+.about h6 {
+  font-size: 2.0rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 900px) {
   .about p {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
 }
 
 .aboutbutton {
-  padding-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -388,12 +408,12 @@ p.hero-text {
 }
 
 .aboutbuttonsection {
-  padding: 10% 0% 60% 10%;
+  padding: 0% 0% 20% 10%;
 }
 
 @media screen and (max-width: 1200px) {
   .aboutbuttonsection {
-    padding: 5% 0% 60% 0%;
+    padding: 5% 0% 20% 0%;
     justify-content: center;
     text-align: center;
   }
@@ -401,7 +421,7 @@ p.hero-text {
 
 @media screen and (max-width: 991px) {
   .aboutbuttonsection {
-    padding: 5% 0% 00% 0%;
+    padding: 5% 0% 20% 0%;
     justify-content: center;
     text-align: center;
   }
@@ -425,8 +445,10 @@ p.hero-text {
   flex-basis: 100%;
   flex: 1;
   justify-content: flex-start;
-  padding: 2% 3%;
+  padding: 5% 0%;
 }
+
+
 
 @media screen and (max-width: 991px) {
   .aboutcolumn1 {
@@ -440,16 +462,32 @@ p.hero-text {
   justify-content: flex-start;
   margin: 0 auto;
   width: 80%;
-  padding-top: 3%;
+  padding-top: 1%;
 }
 
 @media screen and (max-width: 1250px) {
 
   /* laptop screen */
   .aboutcontainer {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .aboutcontainer {
+    width: 80%;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .aboutcontainer {
     width: 90%;
   }
 }
+
 
 .aboutcontainer1 {
   display: flex;
@@ -465,8 +503,7 @@ p.hero-text {
 
   /* laptop screen */
   .aboutcontainer1 {
-    flex-wrap: nowrap;
-    width: 90%;
+    width: 100%;
   }
 
   .aboutcontainer1 .newsection {
@@ -569,11 +606,6 @@ p.hero-text {
   align-items: flex-start;
 }
 
-.about-disp-quote {
-  margin-bottom: 40px;
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
-}
 
 @media screen and (max-width: 991px) {
   .about-rm-media {
@@ -581,11 +613,6 @@ p.hero-text {
   }
 }
 
-@media screen and (min-width: 991px) {
-  .about-disp-quote {
-    display: none;
-  }
-}
 
 .aboutrightcolumn {
   display: flex;
@@ -839,7 +866,7 @@ p.hero-text {
   border-radius: 5px;
   color: white;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 15px 30px;
@@ -2373,9 +2400,6 @@ input[type="submit"]:hover {
   }
 }
 
-.smallerwidth {
-  width: 70%;
-}
 
 @media screen and (max-width: 1490px) {
   .smallerwidth {
@@ -2419,6 +2443,10 @@ input[type="submit"]:hover {
 .space {
   padding-top: 4rem;
   text-align: center;
+}
+
+.space40 {
+  padding-top: 40px;
 }
 
 .space50 {
@@ -2500,6 +2528,7 @@ input[type="submit"]:hover {
     width: 100%;
   }
 }
+
 
 .wireframephotos {
   display: flex;
