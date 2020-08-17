@@ -371,6 +371,17 @@ p.hero-text {
   margin-bottom: 0rem;
 }
 
+.about a {
+  color: #955BA7;
+  font-size: 1.6rem;
+  letter-spacing: .2px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about a:hover {
+  color: #54298f;
+}
 
 .about ul {
   list-style-type: disc;
@@ -408,6 +419,7 @@ p.hero-text {
 }
 
 .aboutbuttonsection {
+  display: none;
   padding: 0% 0% 20% 10%;
 }
 
@@ -500,10 +512,33 @@ p.hero-text {
   padding-top: 0%;
 }
 
+.aboutcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  padding-left: 10%;
+  text-align: left;
+  /*previous version is 100% */
+
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutcontainer2 {
+    padding-left: 10%;
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 991px) {
 
   /* laptop screen */
   .aboutcontainer1 {
+    width: 100%;
+  }
+
+  .aboutcontainer2 {
+    padding-left: 0%;
     width: 100%;
   }
 
@@ -517,6 +552,8 @@ p.hero-text {
   line-height: 6rem;
   letter-spacing: 10px;
 }
+
+
 
 @media screen and (max-width: 991px) {
 
@@ -543,14 +580,8 @@ p.hero-text {
   }
 }
 
-.aboutcontainer2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 0rem;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
+
+
 
 /* CONTAINERS FOR THE PHOTOS ON ABOUT PAGE */
 .aboutcontainerphotos {
