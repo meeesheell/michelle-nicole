@@ -461,6 +461,7 @@ p.hero-text {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0 auto;
+  margin-top: 50px;
   width: 80%;
   padding-top: 1%;
 }
@@ -1214,10 +1215,12 @@ code {
 
 /* CONTAINERS FOR CONTACT PAGE*/
 .containercontact {
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 80px;
   text-align: center;
   width: 80%;
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1248,6 +1251,7 @@ code {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-top: 80px;
   width: 90%;
   padding-top: 3%;
 }
@@ -1412,6 +1416,11 @@ padding: 30px 30px 20px 40%; */
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
+
+.footerlinks a h6:hover {
+  color: #54298f;
+}
+
 
 @media screen and (min-width: 650px) {
   .footerlinks {
@@ -1730,7 +1739,7 @@ input[type="submit"]:hover {
   height: 100%;
   justify-content: flex-start;
   margin: 0 auto;
-  padding-top: 3%;
+  padding-top: 15rem;
   width: 70%;
 }
 
@@ -1838,10 +1847,14 @@ input[type="submit"]:hover {
 /* FOR THE NAVIGATION */
 .nav-header {
   align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
   display: flex;
   list-style-type: none;
   margin: 0;
   padding-top: 1%;
+  position:  fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
@@ -1886,6 +1899,16 @@ input[type="submit"]:hover {
   font-weight: bold;
   padding-left: 0rem;
   padding-right: 4rem;
+}
+
+.nav-items li a:hover {
+  color: #54298f;
+}
+
+.nav-items li.active-link>a {
+  border-bottom:  1px solid #54298f;
+  color: #54298f;
+  padding-bottom:  1px;
 }
 
 @media screen and (max-width: 500px) {
@@ -2150,6 +2173,7 @@ input[type="submit"]:hover {
 .project-hero {
   position: relative;
   text-align: left;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 615px) {
