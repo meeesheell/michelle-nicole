@@ -1939,7 +1939,10 @@ input[type="submit"]:hover {
   border-bottom:  1px solid #54298f;
   color: #54298f;
   padding-bottom:  1px;
+  border-bottom: 4px solid #54298f;
+  padding-bottom: 8px;
 }
+
 
 @media screen and (max-width: 500px) {
   .nav-items {
@@ -2693,6 +2696,17 @@ https://flickity.metafizzy.co
   margin-bottom: 10px;
   padding: 0 10%;
   width: 100%;
+}
+
+.carousel-cell a {
+  color: #955BA7;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.carousel-cell a:hover {
+  color: #54298f;
+  text-decoration: none;
 }
 
 /* ---- cell-selector ---- */
